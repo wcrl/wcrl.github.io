@@ -20,7 +20,7 @@ author: Salaj Rijal
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Us: "aboutus"
   Documentation: "documentation/GettingStarted"
   Resources:
     - Build-A-Bot Repo: "https://github.com/wcrl/Build-the-Bot"
