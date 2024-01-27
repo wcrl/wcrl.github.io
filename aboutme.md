@@ -1,16 +1,9 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me!
+title: About Us
+subtitle: Who are we?
 ---
 
-My name is WCRL. I have the following qualities:
+# WORK IN PROGRESS!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+![image](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjRyd2FxM2NncXJlZTdneG45OGU1NTA1MmswcGp3aW8xcDRvbTM5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VHOF8pfPZOt9p018zw/giphy.gif)
