@@ -1,4 +1,6 @@
-# Electronics Bill of Materials
+---
+title: Electronics Bill of Materials
+---
 This is a recommended Bill-Of-Materials for the electronics of your bot. Parts in the category "PCB" are required to populate the PCB. All other parts are up to your preference.
 
 *If you are a Thomas J. Watson College of Engineering and Applied Sciences student competing in the 2022-2023 Watson Combat Robotics League, these parts are provided for you on the WCRL shelf in EB B1. Please contact @executive in the discord with any questions.

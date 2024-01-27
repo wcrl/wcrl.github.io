@@ -1,4 +1,5 @@
-# Electronics Troubleshooting
+---
+title: Electronics Troubleshooting
 ---
 
 ## Arduino Nano

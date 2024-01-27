@@ -1,4 +1,6 @@
-# Arduino FAQ
+---
+title: Arduino FAQ
+---
 ## My Arduino Nano won’t program?
 
 - This problem typically occurs when incorrect settings are selected in the arduino programmer. Here are some quick checks you can follow to debug.

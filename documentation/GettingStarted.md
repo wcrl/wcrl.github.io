@@ -1,4 +1,6 @@
-# Getting Started
+---
+title: Getting Started
+---
 ## Overview
 
 This document will give you everything you need to know about designing your own combat robot for the Watson Combat Robotics League!
