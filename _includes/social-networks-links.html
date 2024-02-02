@@ -65,7 +65,7 @@
 
   {%- if network[0] == "github" -%}
   <li class="list-inline-item">
-    <a href="https://github.com/{{ network[1] }}" title="GitHub">
+    <a href="https://github.com/{{ network[1] }}" title="GitHub" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -161,7 +161,7 @@
 
   {%- if network[0] == "instagram" -%}
   <li class="list-inline-item">
-    <a href="https://www.instagram.com/{{ network[1] }}" title="Instagram">
+    <a href="https://www.instagram.com/{{ network[1] }}" title="Instagram" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
@@ -173,7 +173,7 @@
 
   {%- if network[0] == "youtube" -%}
   <li class="list-inline-item">
-    <a href="https://www.youtube.com/{{ network[1] }}" title="YouTube">
+    <a href="https://www.youtube.com/{{ network[1] }}" title="YouTube" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
@@ -333,7 +333,7 @@
     {% assign discord_url_prefix = 'invite/' -%}
   {% endunless -%}
   <li class="list-inline-item">
-    <a href="https://discord.com/{{discord_url_prefix}}{{network[1]}}" title="Discord">
+    <a href="https://discord.com/{{discord_url_prefix}}{{network[1]}}" title="Discord" target="_blank">
       <span class="fa-stack fa-lg" aria-hidden="true">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
