@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/assets/css/sidebar.css">
+<script src="/assets/js/sidebar.js"></script>
+
+<div class="sidenav">
+{%- for link in site.data.nav.documentation -%}
+  <a href="/documentation/{{link[1] }}">{{link[0]}}</a>
+{%- endfor -%}
+
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link `3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
