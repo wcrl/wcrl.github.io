@@ -1,5 +1,6 @@
 ---
 title: 3D Printing Guide
+layout: documentation
 ---
 # Overview
 This document is to serve as a guide for designing parts for FDM 3D printing. This guide is by no means exhaustive, as there are many factors that go into successfully designed and printed parts. We will merely cover the most important aspects from a designing, slicing, and printing perspective.

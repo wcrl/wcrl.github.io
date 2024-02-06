@@ -1,5 +1,6 @@
 ---
 title: Bluetooth Module
+layout: documentation
 ---
 
 There are two different sets of code for Bot Control on the Arduino Platform. Due to lack of updates by Dabble, iPhones on iOS 16+ will need to utilize the BitBlue code.

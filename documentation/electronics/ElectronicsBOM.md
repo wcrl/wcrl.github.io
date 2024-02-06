@@ -1,5 +1,6 @@
 ---
 title: Electronics Bill of Materials
+layout: documentation
 ---
 This is a recommended Bill-Of-Materials for the electronics of your bot. Parts in the category "PCB" are required to populate the PCB. All other parts are up to your preference.
 

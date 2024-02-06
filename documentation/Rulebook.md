@@ -1,5 +1,6 @@
 ---
 title: Rulebook
+layout: documentation
 ---
 # Watson Combat Robotics League Fall 2023 Rulebook
 
