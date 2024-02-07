@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/assets/css/sidebar.css">
-<script src="/assets/js/sidebar.js"></script>
+<link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}" >
+<script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
 
 <div class="sidenav">
 {%- for link in site.data.nav.documentation -%}
