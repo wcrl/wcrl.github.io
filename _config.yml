@@ -2,6 +2,17 @@
 # THEME HAVE BEEN OMITTED FOR THE SAKE OF SIMPLICITY! FIND THE ORIGINAL FILE
 # HERE: https://github.com/daattali/beautiful-jekyll#plans
 
+
+############################
+# ---  Collections   ---   #
+############################
+collections:
+  documentation:
+    output: true
+    permalink: /:collection/:name
+
+
+
 ############################
 # --- Required options --- #
 ############################
