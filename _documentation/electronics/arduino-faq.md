@@ -1,6 +1,7 @@
 ---
 title: Arduino FAQ
 layout: documentation
+group: electronics
 ---
 ## My Arduino Nano won’t program?
 

@@ -1,6 +1,7 @@
 ---
 title: Electronics Troubleshooting
 layout: documentation
+group: electronics
 ---
 
 ## Arduino Nano

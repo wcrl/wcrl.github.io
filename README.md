@@ -25,10 +25,10 @@ The header for all documentation files should have the following format:
 ```yml
 title: /* title name */
 layout: documentation
-group: /* the name of the folder */
+group: /* the name of the subfolder */
 ```
 
-**Note:** For the `group` attribute, if you include a new category/folder make sure to include it in the `_data/nav.yml` folder! It should follow this format:
+**Note:** If you want the doc file to be included in a dropdown menu, make sure to specify a value for the `group` attribute (if you dont want it in a subfolder, put empty quotes `""`). The value should be the name of the subfolder the doc file is in. If you create a new subfolder, make sure to include it in the `_data/nav.yml` file! It should follow this format:
 ```yml
 documentation:
     foldername: "Folder Title"    
