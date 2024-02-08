@@ -6,7 +6,7 @@
 
 {% assign documents = site.documentation | where:"group","" %}
 {%- for doc in documents -%}
-  <a href="{{ doc.url }}"> {{ doc.title }} </a>
+  <a href="{{ doc.url | relative_url }"> {{ doc.title }} </a>
 {%- endfor -%}
 
 {%- for group in site.data.nav.documentation -%}
@@ -16,7 +16,7 @@
   </button>
   <div class="dropdown-container">
     {%- for doc in documents -%}
-    <a href="{{ doc.url }}">{{ doc.title }}</a>
+    <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
     {%- endfor -%}
   </div>
 {%- endfor -%}
