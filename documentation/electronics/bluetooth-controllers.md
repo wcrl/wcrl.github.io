@@ -1,5 +1,5 @@
 ---
-title: Bluetooth Module
+title: Bluetooth Controllers
 layout: documentation
 ---
 
