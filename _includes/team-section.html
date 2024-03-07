@@ -1,0 +1,15 @@
+<!-- "role" param will be used to filter for role -->
+<!-- "include.root" can be used to access the role value -->
+
+<h1>Team Members: </h1>
+{% for member in site.team %}
+    <div class="card">
+        <img src="{{"/assets/img/team/" | append: member.img | relative_url }}" height=100px width=100px />
+        <div class="card-container">
+            <h4><b>{{member.name}}</b></h4>
+            <h7><i>{{member.title}}</i></h7>
+            <p><i>{{member.email}}</i></p>
+            <p>{{member.content}}</p>
+        </div>
+    </div>
+{% endfor %}

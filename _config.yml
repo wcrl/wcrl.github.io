@@ -10,6 +10,8 @@ collections:
   documentation:
     output: true
     permalink: /:collection/:name
+  team:
+    output: false
 
 
 
