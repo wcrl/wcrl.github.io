@@ -2,7 +2,10 @@
 
 --- WORK IN PROGRESS ---
 
-Development of the WCRL Website
+Development of the WCRL Website.
+The site is created using jekyll and based on the beautiful-jekyll theme, but is heavily modified to fit WCRL's needs. The website is designed to be easy to add new content to.
+
+If you have any questions on how the website works, please refer to the jekyll-docs. If you really need help figuring something out, you can contact srijal@binghamton.edu (yantayn on discord).
 
 ## Instructions for Use
 ...
@@ -36,6 +39,11 @@ documentation:
     foldername: "Folder Title"    
 ```
 
+### Team Page
+The information for the team page is gathered via google form. The form data will be converted into a spreadsheet and downloaded into a csv file. The csv file is then fed into a python script to generate the team page content. Here are some pointers that will help you use/modify the scripts:
+...
+
+For now, this has to be manually done, but in the future it would be ideal that this would be done automagically.
 
 ## Credits
 
