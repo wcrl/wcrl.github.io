@@ -19,7 +19,7 @@ def generate_file_content(member):
 name: "{member[2]}"
 title: "{member[4]}"
 role: "{member[3]}"
-img: "{member[6]}"
+img: "{member[6] if member[6] else "placeholder.png"}"
 email: "{member[1]}"
 ---
 {member[5]}
