@@ -6,6 +6,11 @@ title: Welcome to WCRL
 # About WCRL
 Our mission at the Watson Combat Robotics League is to empower collegiate students to develop technical engineering skills through competitive combat robotics. We aim to foster a community of innovation and creativity for students and enthusiasts by providing a platform for designing, building, and testing 3D printed robots in a safe and exciting environment. Our focus is on promoting STEM education by providing an opportunity for practical experience in mechanical design, electrical engineering, and programming as well as peer guidance and resources to make participation increasingly accessible. Through our league, we strive to cultivate the next generation of skilled engineers and innovators who will shape the future of technology and robotics.
 
+# Our Google Calendar
+<!-- to style the calendar check https://styledcalendar.com/ (currently on Salaj's account) -->
+<iframe src="https://embed.styledcalendar.com/#HajExdydXOgbQW8OcJrE" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+
 # Build-the-Bot
 Welcome to the Build-the-Bot platform! Build-the-Bot is an open-source Arduino based robotics platform maintained by the Watson Combat Robotics League at Binghamton University!
 
@@ -16,7 +21,6 @@ To get started, read the [Getting Started Guide](https://github.com/wcrl/Build-t
 In order to move to registered status and gain access to more channels make sure you
 - Change your discord nickname in this server to your first and last name 
 - Fill out our registration form via google forms: https://forms.gle/xkhhvzqmUq5xLZNm7
-
 
 If you have any questions, please contact us via our discord, or email WCRL@binghamton.edu.
 
