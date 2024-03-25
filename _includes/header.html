@@ -44,9 +44,6 @@
                 Last updated {{ page.last-updated | date: date_format }}
               </span>
             {% endif %}
-            {% if page.readtime %}
-              {% include readtime.html %}
-            {% endif %}
           {% endif %}
         </div>
       </div>
@@ -55,11 +52,4 @@
   {% endif %}
   {% if page.cover-img %}<span class='img-desc'></span>{% endif %}
 </div>
-
-{% if page.header-extra %}
-  {% for file in page.header-extra %}
-    {% include {{ file }} %}
-  {% endfor %}
-{% endif %}
-
 </header>

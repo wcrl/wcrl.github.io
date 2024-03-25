@@ -1,24 +1,24 @@
-<link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}"  >
-<script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
-
 <div class="sidenav">
 
-
-{% assign documents = site.documentation | where:"group","" %}
-{%- for doc in documents -%}
+  {% assign documents = site.documentation | where:"group","" %}
+  
+  {%- for doc in documents -%}
   <a href="{{ doc.url | relative_url }}"> {{ doc.title }} </a>
-{%- endfor -%}
+  {%- endfor -%}
 
-{%- for group in site.data.nav.documentation -%}
+  {%- for group in site.data.nav.documentation -%}
   {% assign documents = site.documentation | where:"group",group[0] %}
+
   <button class="dropdown-btn" onclick="toggleDropdown(this)">{{ group[1] }}
     <i class="fa fa-caret-down"></i>
   </button>
+
   <div class="dropdown-container">
     {%- for doc in documents -%}
     <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
     {%- endfor -%}
   </div>
-{%- endfor -%}
+
+  {%- endfor -%}
 
 </div>
