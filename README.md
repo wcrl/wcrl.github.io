@@ -8,7 +8,11 @@ The site is created using jekyll and based on the beautiful-jekyll theme, but is
 If you have any questions on how the website works, please refer to the jekyll-docs. If you really need help figuring something out, you can contact srijal@binghamton.edu (yantayn on discord).
 
 ## Instructions for Use
-...
+To run locally, first clone the repo and run the following commands in the root directory:
+```bash
+jekyll install  \\ this will install all required libraries
+bundle exec jekyll serve \\ this command will run the jekyll server
+```
 
 ### Documentation
 All documentation should be placed into the `_documentation` folder. The folder should
