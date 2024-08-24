@@ -3,13 +3,13 @@
 
 {% assign members = site.team | where:"role",include.role %}
 {% for member in members %}
-    <div class="card">
-        <img src="{{"/assets/img/team/" | append: member.img | relative_url }}" height=100px width=100px />
-        <div class="card-container">
-            <h4><b>{{member.name}}</b></h4>
-            <h7><i>{{member.title}}</i></h7>
-            <p><i>{{member.email}}</i></p>
-            <p>{{member.content}}</p>
-        </div>
+<div class="card">
+    <img src="{{"/assets/img/team/" | append: member.img | relative_url }}" height=100px width=100px />
+    <div class="card-container">
+        <h4><b>{{member.name}}</b></h4>
+        <h7><i>{{member.title}}</i></h7>
+        <p><i>{{member.email}}</i></p>
+        <p>{{member.content}}</p>
     </div>
+</div>
 {% endfor %}

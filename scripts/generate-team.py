@@ -21,8 +21,8 @@ title: "{member[4]}"
 role: "{member[3]}"
 img: "{member[6] if member[6] else "placeholder.png"}"
 email: "{member[1]}"
+description: "{member[5]}"
 ---
-{member[5]}
 """
 
 
