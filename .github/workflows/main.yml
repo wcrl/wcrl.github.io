@@ -9,6 +9,7 @@ jobs:
       - name: Build the site in the jekyll/builder container
         run: |
           export JEKYLL_VERSION=3.8
+          chmod 777 Gemfile.lock
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
           -e PAGES_REPO_NWO=${{ github.repository }} \
