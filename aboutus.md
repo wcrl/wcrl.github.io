@@ -5,19 +5,25 @@ subtitle: Meet the Team!
 ---
 
 ## Executive Leadership
-The executive board forms the leadership of WCRL. They are in charge of logistics, organization and any future projects that help expand WCRL.
+The Executive Leadership team is the backbone of WCRL, responsible for steering the organization’s vision and strategy. They oversee logistics, manage organizational operations, and spearhead initiatives that drive the growth and expansion of WCRL.
 {% include team-section.html role = "Executive Leadership" %} 
 
-## League Coordinator
-The league coordinators are in charge of bridging the gap between the the executive board and the general body of WCRL. They send out the monthly newsletters and are in charge of the social media as well.
-{% include team-section.html role = "League Coordinator" %} 
+## Competition Coordinator
+The Competition Coordinators serve as the vital link between the Executive Board and the general WCRL membership. They manage communications, including the distribution of monthly newsletters, and maintain a strong presence on social media to keep the community engaged and informed.
+{% include team-section.html role = "Competition Coordinator" %} 
 
 ## Build Technicians
-Build Technicians form the heart and soul of WCRL. They are the elite squad in charge of helping you guys design, build, and debug (yay!) your robots.
+Build Technicians are the core technical experts of WCRL, playing a crucial role in the design, construction, and troubleshooting of combat robots. Their expertise ensures that each robot is battle-ready, and they are always available to provide guidance and support throughout the building process.
 {% include team-section.html role = "Build Technician" %} 
 
+## Battlebot Team Leads
+The Battle Bot Team leads oversee the development of combat robots for external tournaments. They are responsible for managing their teams, overseeing the design and build process, and ensuring their robots are primed for competition on a larger stage.
+{% include team-section.html role = "Battlebot Team Lead" %} 
+
 ## Freshman Ambassadors
-Fresman Ambassadors are the newbies to WCRL. During their first semester they will compete in the semesterly tournament (just like you) and will slowly be more integreated into the E-board.
+Freshman Ambassadors are the newest members of WCRL, embarking on their journey with us during their first semester. They participate in the semesterly tournament and gradually become more integrated into the organization, with opportunities to take on greater responsibilities as they gain experience.
 {% include team-section.html role = "Freshman Representative" %} 
 
-## 3lb Robot Team?
+# Alumni
+The WCRL Alumni section honors the contributions of past Executive Board members who have played a pivotal role in shaping the league. These individuals have left a lasting legacy through their leadership, innovation, and dedication. As they move on to new ventures, they remain an integral part of the WCRL community, inspiring current and future members to continue pushing the boundaries of the club further.
+{% include team-section.html role = "Alumni" %} 

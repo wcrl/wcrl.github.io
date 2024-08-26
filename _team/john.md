@@ -1,6 +1,6 @@
 ---
 name: "John "
-title: "Chairperson"
+title: "League Chairperson"
 role: "Executive Leadership"
 img: "John.png"
 email: "jpforte1@binghamton.edu"

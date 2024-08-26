@@ -1,0 +1,66 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 600px; /* Set a maximum width for the card */
+    height: 250px; /* Set a fixed height for the card */
+    margin: 16px auto; /* Centers the card on the page */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Use flexbox to align image and content side by side */
+    flex-direction: row;
+}
+
+.card-img {
+    width: 40%; /* Image takes up 40% of the card's width */
+    height: 100%; /* Image height matches the card's height */
+    object-fit: cover;
+    border-right: 1px solid #ddd; /* Add a border between the image and content */
+}
+
+.card-container {
+    padding: 16px;
+    width: 60%; /* Content takes up the remaining 60% */
+    height: 100%; /* Make sure the container height matches the card height */
+    overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
+}
+
+.card h4, .card h7 {
+    margin: 0;
+}
+
+.card h7 {
+    font-size: 14px;
+    color: gray;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack the image and content vertically on smaller screens */
+        height: auto; /* Remove the fixed height on smaller screens */
+    }
+
+    .card-img {
+        width: 100%;
+        height: 200px; /* Adjust the image height for smaller screens */
+        border-right: none;
+        border-bottom: 1px solid #ddd; /* Add a bottom border instead */
+    }
+
+    .card-container {
+        width: 100%;
+        height: auto; /* Remove fixed height for mobile */
+        overflow-y: visible; /* Remove the scrollbar on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-img {
+        height: 150px; /* Further adjust image height for small screens */
+    }
+}
