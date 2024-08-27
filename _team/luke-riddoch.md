@@ -1,6 +1,6 @@
 ---
 name: "Luke Riddoch"
-title: "N/A"
+title: ""
 role: "Alumni"
 img: "Luke.jpg"
 email: "lriddoc1@binghamton.edu"

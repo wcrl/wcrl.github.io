@@ -1,6 +1,6 @@
 ---
 name: "Rohan"
-title: "N/A"
+title: ""
 role: "Competition Coordinator"
 img: "RohanBajwa.jpeg"
 email: "rbajwa1@binghamton.edu"

@@ -17,7 +17,7 @@ def generate_file_name(name):
 def generate_file_content(member):
     return f"""---
 name: "{member[2]}"
-title: "{member[4]}"
+title: "{"" if member[4] in ["N/A", "n/a", "no", "No"] else member[4]}"
 role: "{member[3]}"
 img: "{member[6] if member[6] else "placeholder.png"}"
 email: "{member[1]}"

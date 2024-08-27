@@ -1,6 +1,6 @@
 ---
 name: "Eddie"
-title: "N/A"
+title: ""
 role: "Build Technician"
 img: "Eddie.png"
 email: "enunez10@binghamton.edu"

@@ -1,6 +1,6 @@
 ---
 name: "Melanie Koren"
-title: "N/A"
+title: ""
 role: "Build Technician"
 img: "MelanieKoren.jpg"
 email: "mkoren1@binghamton.edu"

@@ -1,6 +1,6 @@
 ---
 name: "Daniel"
-title: "N/A"
+title: ""
 role: "Build Technician"
 img: "placeholder.png"
 email: "dbondar2@binghamton.edu"

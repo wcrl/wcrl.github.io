@@ -1,6 +1,6 @@
 ---
 name: "Timothy Tran"
-title: "N/A"
+title: ""
 role: "Competition Coordinator"
 img: "Tim.png"
 email: "ttran14@binghamton.edu"
