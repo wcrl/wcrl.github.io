@@ -1,11 +1,11 @@
 ---
 layout: base
 ---
-
 {% include sidebar.html %}
 
-{% include header.html type="page" %}
+
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
+  {% include header.html type="page" %}
   <div class="row">
     <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
       {{ content }}
