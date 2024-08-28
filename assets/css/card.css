@@ -61,6 +61,6 @@
 
 @media (max-width: 480px) {
     .card-img {
-        height: 150px; /* Further adjust image height for small screens */
+        height: 300px; /* Further adjust image height for small screens */
     }
 }

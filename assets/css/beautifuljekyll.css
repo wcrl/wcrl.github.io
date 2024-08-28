@@ -380,7 +380,7 @@ img {
 /* --- Footer --- */
 
 footer {
-  z-index: 999999;
+  z-index: 999;
   padding: 1.875rem 0;
   border-top: 1px #EAEAEA solid;
   margin-top: 3.125rem;

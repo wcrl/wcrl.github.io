@@ -1,7 +1,7 @@
 <!-- "role" param will be used to filter for role -->
 <!-- "include.role" can be used to access the role value -->
 
-{% assign members = site.team | where:"role",include.role %}
+{% assign members = site.team | where:"role", include.role %}
 {% for member in members %}
 <div class="card">
     <img class="card-img" src="{{"/assets/img/team/" | append: member.img | relative_url }}"/>

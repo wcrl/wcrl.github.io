@@ -35,8 +35,9 @@
   top: 60px;
   z-index: 1000;
 
-  border: none;
-  background: none;
+  border-radius: 10px;
+  border: black;
+  background: lightgray;
   
   font-size: 24px;
   cursor: pointer;
@@ -47,5 +48,6 @@
   #sidebar {
     width: 100%;
     left: -100%;
+    z-index: 1000;
   }
 }

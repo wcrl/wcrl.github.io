@@ -1,7 +1,6 @@
 ---
 title: Getting Started
 layout: documentation
-group: ""
 ---
 ## Overview
 

@@ -24,6 +24,6 @@ The Battle Bot Team leads oversee the development of combat robots for external 
 Freshman Ambassadors are the newest members of WCRL, embarking on their journey with us during their first semester. They participate in the semesterly tournament and gradually become more integrated into the organization, with opportunities to take on greater responsibilities as they gain experience.
 {% include team-section.html role = "Freshman Representative" %} 
 
-# Alumni
+## Alumni
 The WCRL Alumni section honors the contributions of past Executive Board members who have played a pivotal role in shaping the league. These individuals have left a lasting legacy through their leadership, innovation, and dedication. As they move on to new ventures, they remain an integral part of the WCRL community, inspiring current and future members to continue pushing the boundaries of the club further.
 {% include team-section.html role = "Alumni" %} 
