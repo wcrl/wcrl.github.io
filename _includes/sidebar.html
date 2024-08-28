@@ -2,17 +2,24 @@
   <button id="sidebarToggle">☰</button>
   <ul>
 
-    {% for doc in site.documentation %}
+    <!-- All documenation without a group -->
+    {% assign docs = site.documentation | where:"group","" %}
+    {% for doc in docs %}
     <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
     {% endfor %}
-
-    <!-- <li><a href="#overview">Overview</a></li>
-    <li><a href="#conceptual-design">Conceptual Design</a></li>
-    <li><a href="#cad-design-and-part-ordering">CAD Design and Part Ordering</a></li>
-    <li><a href="#hardware">Hardware</a></li>
-    <li><a href="#cad-designs">CAD Designs</a></li>
-    <li><a href="#design-recommendations">Design Recommendations</a></li>
-    <li><a href="#3d-printing-setting-overview">3D Printing Setting Overview</a></li> -->
+    
+    <!-- All documentation that is split into groups -->
+    {% for group in site.data.sidebar.groups %}
+      {% assign docs = site.documentation | where:"group",group[0] %}
+    <li>
+      <a class="sidebar-dropdown-toggle">{{ group[1] }}<span class="arrow">▼</span></a>
+      <ul class="submenu">
+        {% for doc in docs %}
+        <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>  
+    {% endfor %}
 
   </ul>
 </div>

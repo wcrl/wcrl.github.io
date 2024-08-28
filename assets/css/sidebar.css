@@ -43,7 +43,26 @@
   cursor: pointer;
 }
 
+/* Submenu CSS */
+#sidebar .submenu {
+  display: none;
+  padding-left: 20px;
+}
 
+#sidebar .submenu.active {
+  display: block;
+}
+
+#sidebar .arrow {
+  float: right;
+  transition: transform 0.3s;
+}
+
+#sidebar .arrow.down {
+  transform: rotate(180deg);
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   #sidebar {
     width: 100%;
