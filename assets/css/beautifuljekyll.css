@@ -16,10 +16,6 @@ body {
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
   background-color: {{ site.page-col | default: "#FFFFFF" }};
-  {% if site.page-img %}
-  background-image: url({{ site.page-img | relative_url }});
-  background-attachment: fixed;
-  {% endif %}
   overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;
@@ -384,6 +380,7 @@ img {
 /* --- Footer --- */
 
 footer {
+  z-index: 999999;
   padding: 1.875rem 0;
   border-top: 1px #EAEAEA solid;
   margin-top: 3.125rem;

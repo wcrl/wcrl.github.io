@@ -1,33 +1,26 @@
-//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdowns = document.getElementsByClassName("dropdown-btn");
-console.log(dropdowns.length);
+/*
 
-for (let i = 0; i > dropdowns.length; i++) {
-  console.log("hi");
-}
+TO DO:
+- Fix issue where the navbar bugs (is cut off) at a certain width
+- Make the sidebar close after clicking when the width is smaller than 678 
+- Fix margin left of the body/main content being 0 when at a certain size
+*/
 
+// Run the following code after the website is done loading
+document.addEventListener('DOMContentLoaded', ()=> {
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggle = document.getElementById('sidebarToggle');
 
-for (let i = 0; i < dropdowns.length; i++) {
-  console.log("dropdown found");
-  dropdowns[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
+  // Toggle sidebar on and off
+  sidebarToggle.addEventListener('click', function () {
+    sidebar.classList.toggle('active');
+  });
+
+  // Close sidebar when clicking outside of it
+  document.addEventListener('click', function (event) {
+    if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
+      sidebar.classList.remove('active');
     }
   });
-}
 
-
-function toggleDropdown(dropdown) {
-  console.log("opening dropdown");
-  dropdown.classList.toggle("active");
-  var dropdownContent = dropdown.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-    dropdownContent.style.display = "none";
-  } else {
-    dropdownContent.style.display = "block";
-  }
-};
+});

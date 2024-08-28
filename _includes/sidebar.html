@@ -1,24 +1,17 @@
-<div class="sidenav">
+<div id="sidebar">
+  <button id="sidebarToggle">☰</button>
+  <ul>
 
-  {% assign documents = site.documentation | where:"group","" %}
-  
-  {%- for doc in documents -%}
-  <a href="{{ doc.url | relative_url }}"> {{ doc.title }} </a>
-  {%- endfor -%}
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#conceptual-design">Conceptual Design</a></li>
+    <li><a href="#cad-design-and-part-ordering">CAD Design and Part Ordering</a></li>
+    <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#cad-designs">CAD Designs</a></li>
+    <li><a href="#design-recommendations">Design Recommendations</a></li>
+    <li><a href="#3d-printing-setting-overview">3D Printing Setting Overview</a></li>
 
-  {%- for group in site.data.nav.documentation -%}
-  {% assign documents = site.documentation | where:"group",group[0] %}
 
-  <button class="dropdown-btn" onclick="toggleDropdown(this)">{{ group[1] }}
-    <i class="fa fa-caret-down"></i>
-  </button>
 
-  <div class="dropdown-container">
-    {%- for doc in documents -%}
-    <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>
-    {%- endfor -%}
-  </div>
-
-  {%- endfor -%}
-
+    
+  </ul>
 </div>
