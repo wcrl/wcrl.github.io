@@ -1,22 +1,54 @@
-# About WCRL
-Our mission at the Watson Combat Robotics League is to empower collegiate students to develop technical engineering skills through competitive combat robotics. We aim to foster a community of innovation and creativity for students and enthusiasts by providing a platform for designing, building, and testing 3D printed robots in a safe and exciting environment. Our focus is on promoting STEM education by providing an opportunity for practical experience in mechanical design, electrical engineering, and programming as well as peer guidance and resources to make participation increasingly accessible. Through our league, we strive to cultivate the next generation of skilled engineers and innovators who will shape the future of technology and robotics.
+# WCRL Website Development
 
-# Build-the-Bot
-Welcome to the Build-the-Bot platform! Build-the-Bot is an open-source Arduino based robotics platform maintained by the Watson Combat Robotics League at Binghamton University!
+--- WORK IN PROGRESS ---
 
-To get started, read the [Getting Started Guide](https://github.com/wcrl/Build-the-Bot/blob/453a59d6409c2aacc2f1eb8cd54fe76791a7de1f/Getting%20Started/Getting%20Started.md) and the [3D Printing Guide](https://github.com/wcrl/Build-the-Bot/blob/453a59d6409c2aacc2f1eb8cd54fe76791a7de1f/Getting%20Started/3D%20Printing%20Guide.md). From there, start designing and planning out your bot! 
+Development of the WCRL Website.
+The site is created using jekyll and based on the beautiful-jekyll theme, but is heavily modified to fit WCRL's needs. The website is designed to be easy to add new content to.
 
-### Join our [WCRL Discord](https://discord.gg/UzuaAJWp)
+If you have any questions on how the website works, please refer to the jekyll-docs. If you really need help figuring something out, you can contact srijal@binghamton.edu (yantayn on discord).
 
-In order to move to registered status and gain access to more channels make sure you
-- Change your discord nickname in this server to your first and last name 
-- Fill out our registration form via google forms: https://forms.gle/xkhhvzqmUq5xLZNm7
+## Instructions for Use
+To run locally, first clone the repo and run the following commands in the root directory:
+```bash
+jekyll install  \\ this will install all required libraries
+bundle exec jekyll serve \\ this command will run the jekyll server
+```
 
+### Documentation
+All documentation should be placed into the `_documentation` folder. The folder should
+follow the following format:
+```
+\_documentation
+    getting-started.md
+    \electronics
+        arduino.md
+    \printing
+        printing-guide.md
+    ...
+```
+All documentation filenames should be in lowercase and words should be seperated with dashes. Also, make sure to organize the folders by their categories.
 
-If you have any questions, please contact us via our discord, or email WCRL@binghamton.edu.
+The header for all documentation files should have the following format:
+```yml
+---
+title: /* title name */
+layout: documentation
+group: /* the name of the subfolder */
+---
+```
 
-Happy Building!
+**Note:** If you want the doc file to be included in a dropdown menu, make sure to specify a value for the `group` attribute (if you dont want it in a subfolder, put empty quotes `""`). The value should be the name of the subfolder the doc file is in. If you create a new subfolder, make sure to include it in the `_data/nav.yml` file! It should follow this format:
+```yml
+documentation:
+    foldername: "Folder Title"    
+```
 
-# Future Development Plans 
-- Support for Raspberry Pi Picos
-- PCB for Battery Cutoff
+### Team Page
+The information for the team page is gathered via google form. The form data will be converted into a spreadsheet and downloaded into a csv file. The csv file is then fed into a python script to generate the team page content. Here are some pointers that will help you use/modify the scripts:
+...
+
+For now, this has to be manually done, but in the future it would be ideal that this would be done automagically.
+
+## Credits
+
+Thanks to Dean Attali for his free Beautiful Jekyll theme which alot of this website's design stems from! You can find a link to his theme [here](https://github.com/daattali/beautiful-jekyll#plans)!

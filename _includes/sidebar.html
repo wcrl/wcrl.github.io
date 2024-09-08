@@ -1,0 +1,25 @@
+<div id="sidebar">
+  <button id="sidebarToggle">☰</button>
+  <ul>
+
+    <!-- All documenation without a group -->
+    {% assign docs = site.documentation | where:"group","" %}
+    {% for doc in docs %}
+    <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+    {% endfor %}
+    
+    <!-- All documentation that is split into groups -->
+    {% for group in site.data.sidebar.groups %}
+      {% assign docs = site.documentation | where:"group",group[0] %}
+    <li>
+      <a class="sidebar-dropdown-toggle">{{ group[1] }}<span class="arrow">▼</span></a>
+      <ul class="submenu">
+        {% for doc in docs %}
+        <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>  
+    {% endfor %}
+
+  </ul>
+</div>

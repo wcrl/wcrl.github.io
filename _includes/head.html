@@ -1,0 +1,120 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Store SEO Optimization Variables -->
+  {% capture pagetitle %}
+  {%- if page.share-title -%}
+  {{ page.share-title | strip_html | xml_escape }}
+  {%- elsif page.title -%}
+  {{ page.title | strip_html | xml_escape }}
+  {%- else -%}
+  {{ site.title | strip_html | xml_escape }}
+  {%- endif -%}
+  {% endcapture %}
+
+  {% capture title %}
+  {%- if site.title and site.title-on-all-pages and (site.title != pagetitle) -%}
+  {{ pagetitle }} | {{ site.title }}
+  {%- else -%}
+  {{ pagetitle }}
+  {%- endif -%}
+  {% endcapture %}
+
+  {% capture description %}
+  {%- if page.share-description -%}
+  {{ page.share-description | strip_html | xml_escape }}
+  {%- elsif page.subtitle -%}
+  {{ page.subtitle | strip_html | xml_escape }}
+  {%- else -%}
+  {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
+  {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
+  {%- endif -%}
+  {% endcapture %}
+
+  <!-- Start of Page -->
+  <title>{{ title }}</title>
+
+  <!-- Display Author and SEO Optimization Variables -->
+  {% capture author %}
+  {%- if page.author -%}
+  {{ page.author | strip_html }}
+  {%- elsif site.author -%}
+  {{ site.author }}
+  {%- endif -%}
+  {% endcapture %}
+  {% if author != "" %}
+  <meta name="author" content="{{ author }}">
+  {% endif %}
+
+  <meta name="description" content="{{ description }}">
+
+  {% if site.keywords %}
+  <meta name="keywords" content="{{ site.keywords }}">
+  {% endif %}
+
+  <!-- Load All Required Files -->
+  {% if layout.common-ext-css %}
+  {% for css in layout.common-ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
+  {% endif %}
+
+  {% if layout.common-css %}
+  {% for css in layout.common-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+  {% endif %}
+
+  {% if site.site-css %}
+  {% for css in site.site-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+  {% endif %}
+
+  {% if page.ext-css %}
+  {% for css in page.ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
+  {% endif %}
+
+  {% if page.css %}
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+  {% endif %}
+
+  <!-- Title for SEO -->
+  {% if site.title %}
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% endif %}
+
+  <!-- Image for SEO -->
+  {%- capture img -%}
+  {%- if page.share-img -%}
+  {{ page.share-img }}
+  {%- elsif page.cover-img -%}
+  {%- if page.cover-img.first -%}
+  {{ page.cover-img[0].first.first }}
+  {%- else -%}
+  {{ page.cover-img }}
+  {%- endif -%}
+  {%- elsif page.thumbnail-img -%}
+  {{ page.thumbnail-img }}
+  {%- elsif site.avatar -%}
+  {{ site.avatar }}
+  {% endif %}
+  {%- endcapture -%}
+  {%- assign img=img | strip -%}
+
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+
+  {% if img != "" %}
+  <meta property="og:image" content="{{ img | absolute_url }}">
+  {% endif %}
+
+  <!-- Website Icon  -->
+  <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" />
+
+</head>
