@@ -14,6 +14,12 @@ Things to Fix:
 import csv
 import os
 
+TEAM_COLLECTION_PATH = "../_team/"
+TEAM_IMG_PATH = '../assets/img/team/'
+TITLE_WEIGHTS = {
+    'League Chairperson': 1
+}
+
 def generate_file_name(name):
     return "-".join([x.lower() for x in name.strip().split(" ")])
 
@@ -32,6 +38,12 @@ def format_title(title):
         return ""
     else:
         return title
+    
+def generate_weight(title):
+    if title in TITLE_WEIGHTS:
+        return TITLE_WEIGHTS[title]
+    else:
+        return 0
 
 def generate_file_content(member):
     return f"""---
@@ -41,6 +53,7 @@ role: "{member[3]}"
 img: "{format_img_file(member[6])}"
 email: "{member[1]}"
 description: "{format_description(member[5])}"
+weight: {generate_weight(member[4])}
 ---
 """
 
@@ -60,12 +73,11 @@ if __name__ == "__main__":
     # generate layouts
     for member in members[1:]:
         fname = generate_file_name(member[2])
-        with open(f'../_team/{fname}.md', 'w') as fil:
+        with open(f'{TEAM_COLLECTION_PATH}{fname}.md', 'w') as fil:
             fil.write(generate_file_content(member))
 
     # put all team member image files in lowercase
-    REL_PATH_TEAM = '../assets/img/team/'
-    img_files = os.listdir(REL_PATH_TEAM)
+    img_files = os.listdir(TEAM_IMG_PATH)
     for img_file in img_files:
-        os.rename(REL_PATH_TEAM+img_file, REL_PATH_TEAM+img_file.lower())
+        os.rename(TEAM_IMG_PATH+img_file, TEAM_IMG_PATH+img_file.lower())
 
