@@ -19,7 +19,7 @@ def generate_file_name(name):
 
 def format_description(desc):
     desc.replace('\"', '\'')
-    pass
+    return desc
 
 def format_img_file(img_file):
     if not img_file:
