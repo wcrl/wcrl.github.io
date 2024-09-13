@@ -4,5 +4,5 @@ title: ""
 role: "Build Technician"
 img: "aadhi.jpg"
 email: "amahesh3@binghamton.edu"
-description: "None"
+description: "Friendly and a tech guy "
 ---

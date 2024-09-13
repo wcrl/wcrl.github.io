@@ -18,7 +18,7 @@ def generate_file_name(name):
     return "-".join([x.lower() for x in name.strip().split(" ")])
 
 def format_description(desc):
-    desc.replace('\"', '\'')
+    desc = desc.replace('"', "'")
     return desc
 
 def format_img_file(img_file):

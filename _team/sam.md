@@ -4,5 +4,5 @@ title: "Team Lead"
 role: "Battlebot Team Lead"
 img: "sam.jpg"
 email: "sabrams5@binghamton.edu"
-description: "None"
+description: "I love airplanes, BattleBots, and 3D printing!"
 ---
