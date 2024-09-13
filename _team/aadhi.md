@@ -2,7 +2,7 @@
 name: "Aadhi"
 title: ""
 role: "Build Technician"
-img: "Aadhi.jpg"
+img: "aadhi.jpg"
 email: "amahesh3@binghamton.edu"
-description: "Friendly and a tech guy "
+description: "None"
 ---
