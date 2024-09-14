@@ -1,4 +1,4 @@
-{% assign members = site.team | where:"role", include.role %}
+{% assign members = site.team | where:"role", include.role | sort: "weight" | reverse %}
 {% for member in members %}
 <div class="card">
     <img class="card-img" src="{{"/assets/img/team/" | append: member.img | relative_url }}"/>
