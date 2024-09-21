@@ -2,7 +2,7 @@
 name: "John "
 title: "League Chairperson"
 role: "Executive Leadership"
-img: "hell yeah!"
+img: "john.png"
 email: "jpforte1@binghamton.edu"
 description: "M.S Electrical and Computer Engineering 2025
 B.S Mechanica Engineering 2024
