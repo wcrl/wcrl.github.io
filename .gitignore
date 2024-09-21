@@ -13,3 +13,4 @@ Gemfile.lock
 # Enviorment Specific Ignore
 .swp
 .DS_Store
+.ini
