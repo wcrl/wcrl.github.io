@@ -1,4 +1,5 @@
 navbar:
+  Tournament: "tournament"
   Documentation: "documentation/getting-started"
   About Us: "aboutus"
   Resources:
