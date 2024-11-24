@@ -1,6 +1,7 @@
 """
 NOTE:
 - This script MUST be run in the `scripts` directory
+- ADD THE TEAM IMAGES TO "assets/img/team" BEFORE YOU RUN THIS SCRIPT
 
 Input Errors that Have Been Accounted For:
 - Miscapitalization of image file
