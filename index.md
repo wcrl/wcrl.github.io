@@ -3,6 +3,7 @@ layout: home
 title: Welcome to WCRL
 ---
 
+
 # About WCRL
 Our mission at the Watson Combat Robotics League is to empower collegiate students to develop technical engineering skills through competitive combat robotics. We aim to foster a community of innovation and creativity for students and enthusiasts by providing a platform for designing, building, and testing 3D printed robots in a safe and exciting environment. Our focus is on promoting STEM education by providing an opportunity for practical experience in mechanical design, electrical engineering, and programming as well as peer guidance and resources to make participation increasingly accessible. Through our league, we strive to cultivate the next generation of skilled engineers and innovators who will shape the future of technology and robotics.
 
@@ -10,6 +11,23 @@ Our mission at the Watson Combat Robotics League is to empower collegiate studen
 <!-- to style the calendar check https://styledcalendar.com/ (currently on Salaj's account) -->
 <iframe src="https://embed.styledcalendar.com/#HajExdydXOgbQW8OcJrE" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
 <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+
+# Spring 2025 Registration now Open
+Registration is now open for the Spring 2025 season! Sign up using [this](https://forms.gle/cWv3s9G7wya3rGDP7) google form. Here are some important dates to look out for:
+
+
+Qualifying Matches (all hosted 8pm on Mondays at EB E1)
+- March 3rd
+- March 17th
+- March 24th
+- March 31st
+- April 7th
+- April 16th
+
+End of Semester Tournament (time TBD at the ITC):
+- May 4th
+
+Something new this season is that you now have to attend **3** matches or win **1** to qualify for the end of semester tournament!
 
 # Build-the-Bot
 Welcome to the Build-the-Bot platform! Build-the-Bot is an open-source Arduino based robotics platform maintained by the Watson Combat Robotics League at Binghamton University!
