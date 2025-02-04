@@ -1,10 +1,11 @@
 ---
 name: "Jay"
 title: ""
-role: "Freshman Ambassador"
+role: "Supreme Leader"
 img: "jay.jpg"
 email: "jakasofu@binghamton.edu"
-description: "Team spaghettiiii
+description: "Team spaghettiiii
+
 also (probably) a computer engineer"
 weight: 0
 ---
