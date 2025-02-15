@@ -126,5 +126,5 @@ After you meet with your build tech and get a rundown, the next step is to actua
 
 The Fabrication Lab is where most of your soldering and building will take place, so make sure to register for [keycard access]({{"/documentation/keycard-access" | relative_url }}). If you need guidance, you can attend our weekly build sessions at 8pm in the Fab Lab or alternatively schedule an appointment with a build tech.
 
-If you ever need any help, don't be afraid to reach out in your team's channel on Discord! Also be sure to check out other resources on the website (top left of website)!
+If you ever need any help, don't be afraid to reach out in your team's channel on Discord! Also be sure to check out other resources on the website!
  

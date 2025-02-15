@@ -22,6 +22,8 @@ If you are interested competing in our internal league, check out our [Competito
 For any questions, reach out to us on Discord or email us at WCRL@binghamton.edu.
 
 
+![image]({{"/assets/img/motivation.jpg" | relative_url }})
+
 Happy Building!
 
 
