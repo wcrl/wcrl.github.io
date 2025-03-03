@@ -68,7 +68,7 @@ Ideas:
         }
     }
     (function () {
-        countdownTimer("March 3, 2025 20:00:00");
+        countdownTimer("March 17, 2025 20:00:00");
     })();
 </script> 
 
@@ -122,7 +122,6 @@ After you meet with your build tech and get a rundown, the next step is to actua
 - 3D Print Your Parts
 - Assemble Your Robot
 - Battle!
-- Rinse & Repeat
 
 The Fabrication Lab is where most of your soldering and building will take place, so make sure to register for [keycard access]({{"/documentation/keycard-access" | relative_url }}). If you need guidance, you can attend our weekly build sessions at 8pm in the Fab Lab or alternatively schedule an appointment with a build tech.
 

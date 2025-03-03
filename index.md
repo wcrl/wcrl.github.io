@@ -5,7 +5,11 @@ title: Welcome to WCRL
 
 
 # About WCRL
-Our mission at the Watson Combat Robotics League is to empower collegiate students to develop technical engineering skills through competitive combat robotics. We aim to foster a community of innovation and creativity for students and enthusiasts by providing a platform for designing, building, and testing 3D printed robots in a safe and exciting environment. Our focus is on promoting STEM education by providing an opportunity for practical experience in mechanical design, electrical engineering, and programming as well as peer guidance and resources to make participation increasingly accessible. Through our league, we strive to cultivate the next generation of skilled engineers and innovators who will shape the future of technology and robotics.
+At Watson Combat Robotics, our mission is to empower collegiate students with hands-on engineering experience through competitive combat robotics. We provide a platform for innovation, teamwork, and technical skill development through our internal combatics league, where students design and battle 3D-printed robots in a controlled environment. Additionally, we support full combat teams that build metal robots to compete in national tournaments, pushing the limits of engineering and strategy. Beyond competition, we also sponsor projects aimed at advancing our league, fostering innovation, and enhancing the overall experience for participants.
+
+Beyond competition, we are committed to fostering STEM education in our broader community. Through outreach initiatives such as volunteering at schools, mentoring youth organizations, and hosting educational events, we inspire the next generation of engineers and problem-solvers.
+
+We welcome collaboration with academic institutions, industry leaders, and sponsors to expand opportunities for students, drive technological advancements, and strengthen our impact. By bridging education, competition, and outreach, Watson Combat Robotics aims to cultivate the future of robotics and engineering excellence.
 
 
 # Interested?
