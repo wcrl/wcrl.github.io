@@ -16,7 +16,7 @@ To become a registered member and access more channels, please:
 - Change your Discord nickname in our server to your first and last name.
 - Complete our [Registration Form](https://forms.gle/xkhhvzqmUq5xLZNm7).
 
-If you are interested competing in our internal league, check out our [Competitor Page]({{ "/compete" | relative_url }}) 
+If you are interested competing in our internal league, check out our [Competitor Page]({{ "/compete" | relative_url }})!
 
 
 For any questions, reach out to us on Discord or email us at WCRL@binghamton.edu.

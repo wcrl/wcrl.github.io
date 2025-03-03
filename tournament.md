@@ -1,10 +1,12 @@
----
----
+<!-- ---
+title: Tournament
+layout: page
+---  -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tournament - Combat Robotics League</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body {
@@ -110,7 +112,6 @@
 </head>
 <body>
     <div class="container">
-        <h1>TOURNAMENT</h1>
         <h2>Watch the WCRL Tournament live!</h2>
 
         <div class="section">
