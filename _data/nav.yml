@@ -1,7 +1,8 @@
 navbar:
   # Tournament: "tournament"
-  Documentation: "documentation/getting-started"
+  Compete: "compete"
   About Us: "aboutus"
   Resources:
+    - Docs: "documentation/getting-started"
     - Build-A-Bot Repo: "https://github.com/wcrl/Build-the-Bot"
     - YouTube Tutorials: "https://www.youtube.com/watch?v=h6dw6_2JMFk&list=PLFKyQXlTI3wrKnCDG6BStf9k8FC4T9J4q"
