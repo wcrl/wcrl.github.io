@@ -1,5 +1,5 @@
 navbar:
-  # Tournament: "tournament"
+  Tournament: "tournament"
   Compete: "compete"
   About Us: "aboutus"
   Resources:
