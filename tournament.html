@@ -185,18 +185,15 @@ layout: page
       </style>
 
       <h2>Live Bracket</h2>
-      <div class="container">Loading...</div>
 
-      <div class="embedded-website" style="width:100%; height:600px; border:1px solid #ccc;">
+      <div style="width: 100%; height: 600px; overflow: hidden;">
         <iframe 
           src="https://truefinals.com/tournament/WCRLSpring2025/raw/bracket" 
-          width="100%" 
-          height="100%" 
-          style="border:none;" 
-          loading="lazy"
-          allowfullscreen>
+          style="transform: scale(0.8); transform-origin: top left; width: 125%; height: 125%; border: none;" 
+          loading="lazy">
         </iframe>
       </div>
+      
       
 <!-- 
       <script>
@@ -251,9 +248,12 @@ layout: page
 
 
 
-  </div>
+    </div>
 
-  <script>
+  
+  
+  
+    <script>
     // Flame particle effect
     function createFlameParticle(x, y, container) {
       const particle = document.createElement('div');
