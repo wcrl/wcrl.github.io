@@ -81,6 +81,8 @@ Ideas:
 - April 16th (8pm @ Fabrication Lab)
 
 ### End of Semester Tournament
+
+
 - May 4th (9am @ Engineering and Sciences Building of ITC)
 
 ### Google Calendar
