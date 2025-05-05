@@ -121,7 +121,7 @@ layout: page
 
     <!-- Live Streams-->
     <div class="section">
-      <h2>Live Stream</h2>>
+      <h2>Live Stream</h2>
       <div class="frame-container livestream-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/rMfYGWAwfcc?si=plZrRr9WNPRyTS5j"
           title="YouTube video player" frameborder="0"
@@ -132,158 +132,48 @@ layout: page
 
 
     <!-- Bracket -->
-    <div id="bracket">
-      <style>
-        #bracket {
-          font-family: sans-serif;
-          background: #000;
-          padding: 20px;
-        }
+    <h2>Live Bracket</h2>
 
-        #bracket h1 {
-          text-align: center;
-        }
-
-        #bracket .container {
-          display: flex;
-          flex-direction: row;
-          overflow-x: auto;
-          gap: 20px;
-          justify-content: center;
-          padding: 10px;
-        }
-
-        #bracket .round {
-          min-width: 200px;
-        }
-
-        #bracket .round h2 {
-          text-align: center;
-          font-size: 1rem;
-          background: #ddd;
-          padding: 5px;
-          border-radius: 5px;
-        }
-
-        #bracket .match {
-          background: white;
-          border: 1px solid #ccc;
-          margin: 10px 0;
-          padding: 8px;
-          border-radius: 5px;
-          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        #bracket .team {
-          margin: 4px 0;
-        }
-
-        #bracket .winner {
-          font-weight: bold;
-          color: green;
-        }
-      </style>
-
-      <h2>Live Bracket</h2>
-      <div class="container">Loading...</div>
-
-      <div class="embedded-website" style="width:100%; height:600px; border:1px solid #ccc;">
-        <iframe 
-          src="https://truefinals.com/tournament/WCRLSpring2025/raw/bracket" 
-          width="100%" 
-          height="100%" 
-          style="border:none;" 
-          loading="lazy"
-          allowfullscreen>
-        </iframe>
-      </div>
-      
-<!-- 
-      <script>
-        (function () {
-          const TOURNAMENT_ID = "WCRLSpring2025"; // Replace with your tournament ID
-          const container = document.querySelector('#bracket .container');
-
-          fetch(`https://truefinals.com/api/tournament/${TOURNAMENT_ID}`)
-            .then(res => res.json())
-            .then(data => {
-              container.innerHTML = '';
-              data.rounds.forEach((round, index) => {
-                const roundDiv = document.createElement('div');
-                roundDiv.className = 'round';
-
-                const roundTitle = document.createElement('h2');
-                roundTitle.textContent = `Round ${index + 1}`;
-                roundDiv.appendChild(roundTitle);
-
-                round.matches.forEach(match => {
-                  const matchDiv = document.createElement('div');
-                  matchDiv.className = 'match';
-
-                  const team1 = match.team1?.name || 'TBD';
-                  const team2 = match.team2?.name || 'TBD';
-                  const score1 = match.team1?.score ?? '-';
-                  const score2 = match.team2?.score ?? '-';
-
-                  const winner =
-                    score1 > score2 ? team1 :
-                      score2 > score1 ? team2 : null;
-
-                  matchDiv.innerHTML = `
-                    <div class="team ${winner === team1 ? 'winner' : ''}">${team1} (${score1})</div>
-                    <div class="team ${winner === team2 ? 'winner' : ''}">${team2} (${score2})</div>
-                  `;
-
-                  roundDiv.appendChild(matchDiv);
-                });
-
-                container.appendChild(roundDiv);
-              });
-            })
-            .catch(err => {
-              container.textContent = 'Failed to load bracket.';
-              console.error('Bracket fetch error:', err);
-            });
-        })();
-      </script>
-    </div> -->
+    <div style="width: 100%; height: 600px; overflow: hidden;">
+      <iframe src="https://truefinals.com/tournament/WCRLSpring2025/raw/bracket"
+        style="transform: scale(0.8); transform-origin: top left; width: 125%; height: 125%; border: none;"
+        loading="lazy">
+      </iframe>
+    </div>
 
 
+    <script>
+      // Flame particle effect
+      function createFlameParticle(x, y, container) {
+        const particle = document.createElement('div');
+        particle.className = 'flame-particle';
+        particle.style.left = x + 'px';
+        particle.style.bottom = '0px';
+        container.appendChild(particle);
 
+        gsap.to(particle, {
+          y: -Math.random() * 50 - 25,
+          x: (Math.random() - 0.5) * 30,
+          opacity: 0,
+          duration: 1 + Math.random(),
+          ease: "power1.out",
+          onComplete: () => particle.remove()
+        });
+      }
 
-  </div>
-
-  <script>
-    // Flame particle effect
-    function createFlameParticle(x, y, container) {
-      const particle = document.createElement('div');
-      particle.className = 'flame-particle';
-      particle.style.left = x + 'px';
-      particle.style.bottom = '0px';
-      container.appendChild(particle);
-
-      gsap.to(particle, {
-        y: -Math.random() * 50 - 25,
-        x: (Math.random() - 0.5) * 30,
-        opacity: 0,
-        duration: 1 + Math.random(),
-        ease: "power1.out",
-        onComplete: () => particle.remove()
+      // Add flame particles to frame containers
+      document.querySelectorAll('.frame-container').forEach(container => {
+        setInterval(() => {
+          const rect = container.getBoundingClientRect();
+          const x = Math.random() * rect.width;
+          createFlameParticle(x, 0, container);
+        }, 100);
       });
-    }
+    </script>
 
-    // Add flame particles to frame containers
-    document.querySelectorAll('.frame-container').forEach(container => {
-      setInterval(() => {
-        const rect = container.getBoundingClientRect();
-        const x = Math.random() * rect.width;
-        createFlameParticle(x, 0, container);
-      }, 100);
-    });
-  </script>
-
-<h2>Judging Rubric</h2>
-<p style="text-align: center;">You can find the judging rubric for the tournament <a href="{{"/rubric" | relative_url }}" target="_blank">here</a>.</p>
+    <h2>Judging Rubric</h2>
+    <p style="text-align: center;">You can find the judging rubric for the tournament <a href="{{" /rubric" |
+        relative_url }}" target="_blank">here</a>.</p>
 </body>
 
 </html>
