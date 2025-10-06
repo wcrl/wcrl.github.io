@@ -3,7 +3,6 @@ title: Rulebook
 layout: documentation
 group: ''
 ---
-
 # Watson Combat Robotics League Fall 2024 - Spring 2025 Rulebook
 
 ## Version 4.2 | Revised 2025-02-07
@@ -45,13 +44,12 @@ The following rules have been constructed to be as unrestrictive to the design p
 
 ### Executive Board
 
-- Chairperson: [John Pforte](jpforte1@binghamton.edu)
-- League Coordinator: [Ryan Calhoun](rcalhou1@binghamton.edu)
-- Build Technicians: [Sam Abramson](sabrams5@binghamton.edu) | [Ben Sharples](bsharpl1@binghamton.edu) | [Walter Schutz](wschutz1@binghamton.edu) | [Melanie Koren](mkoren1@binghamton.edu) | [Erick Palka](epalka@binghamton.edu) | [Salaj Rijal](srijal@binghamton.edu) | [Mckenzie Viersma](mviersm1@binghamton.edu)
-- Competition Coordinator: [Rohan Bajwa](rbajwa1@binghamton.edu)
+- Chairperson: [Mckenzie Viersma](mviersm1@binghamton.edu)
+- League Coordinator: [Rohan Bajwa](rbajwa1@binghamton.edu) 
+- Build Technicians: [Melanie Koren](mkoren1@binghamton.edu) | [Salaj Rijal](srijal@binghamton.edu) | [Jay Akasofu](jakasofu@binghamton.edu)
+- Competition Coordinator: [Ben Sharples](bsharpl1@binghamton.edu)
 - Outreach Coordinator: [Haiden Danto-Scanlan](hdantos1@binghamton.edu)
 - Social Media Coordinator: [Xinlin Wu](xwu19@binghamton.edu)
-- First-Year Ambassadors: [Jay Akasofu](jakasofu@binghamton.edu) | [Alexander Sosa](asosa@binghamton.edu) | [Xinlin Wu](xwu19@binghamton.edu)
 - Faculty Advisor: [Professor Wenfeng Zhao](wzhao@binghamton.edu)
 
 ### Judging Committee
@@ -83,7 +81,7 @@ The league refers to the entire 2024-2025 competition seasons. During this time 
 
 ### Matches
 
-There will six qualifying competitions per season, held in the Thomas J. Watson College of Engineering and Applied Sciences Fabrication Lab - Engineering Building E1. Two or more teams will compete against each other at each competition, with the competition being live-streamed.
+There will six matches a month held in the Thomas J. Watson College of Engineering and Applied Sciences Fabrication Lab - Engineering Building E1. Two or more teams will compete against each other at each competition, with the competition being live-streamed.
 
 Dates for qualifying competitions and tournaments can be found on our public [WCRL Event Calendar](https://calendar.google.com/calendar/u/0?cid=YmluZ2hhbXRvbi5lZHVfZWllNDI5bHBuNGg1MWhzczY3bGxxYWNjc2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
 
@@ -95,7 +93,7 @@ Pinning:
 - With less than 60 seconds remaining: If a bot is pinned for more than 5 seconds, the pinned bot will lose. The 5 second limit will be counted down by the WCRL Executive Board member in charge of the match.
   - For teams competing with multiple bots, the rules on pinning are as follows:
     - If bots are equal weights: All bots must be pinned. If a bot is pinned during the eligible time, it may no longer be used.
-    - If bots are unequal weights: A majority of the weight must be pinned in order to win.
+    - If bots are unequal weights: A majority of the weight must be pinned in order to win. 
 
 Bot Control:
 
