@@ -25,7 +25,19 @@ function highlightActiveNav() {
 function setupSiteMenu() {
     const toggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".site-menu");
+    const primaryLinks = document.querySelector(".nav-links");
     if (!toggle || !menu) return;
+
+    // Keep the compact menu complete on phones and small tablets, where the
+    // horizontal navigation is intentionally hidden to prevent overflow.
+    if (primaryLinks) {
+        const mobileLinks = document.createElement("div");
+        mobileLinks.className = "site-menu-mobile-links";
+        primaryLinks.querySelectorAll("a").forEach((link) => {
+            mobileLinks.appendChild(link.cloneNode(true));
+        });
+        menu.prepend(mobileLinks);
+    }
 
     const closeMenu = () => {
         menu.hidden = true;
@@ -46,6 +58,10 @@ function setupSiteMenu() {
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") closeMenu();
+    });
+
+    menu.addEventListener("click", (event) => {
+        if (event.target.closest("a")) closeMenu();
     });
 }
 
