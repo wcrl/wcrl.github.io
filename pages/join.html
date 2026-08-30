@@ -1,206 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join | WCRL</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | WCRL</title>
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <div class="splash" aria-hidden="true">
-        <div class="splash-logo">
-            <img src="../WCRL.png" alt="">
-        </div>
+  <div class="splash" aria-hidden="true">
+    <div class="splash-logo">
+      <img src="../WCRL.png" alt="">
     </div>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="logo" href="../index.html" aria-label="Watson Combat Robotics League home">
-                <span class="logo-mark"><img src="../WCRL1.png" alt="Watson Combat Robotics League logo"></span>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Watson Combat Robotics League home">
+        <span class="logo-mark"><img src="../WCRL1.png" alt="Watson Combat Robotics League logo"></span>
+      </a>
+      <div class="site-title">Watson Combat Robotics League</div>
+      <div class="header-actions">
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <!-- <a href="projects.html">Robots</a> -->
+          <a href="events.html">Events</a>
+          <a href="join.html">Join</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"
+          aria-label="Open site menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-menu" class="site-menu" hidden aria-label="Additional pages">
+          <a href="folders.html">Folders</a>
+          <a href="pages.html">Pages</a>
+          <a href="documentation.html">Documentation</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="join-heading-row">
+          <h1 class="section-title">Join the League</h1>
+          <div class="join-social-links">
+            <a class="join-instagram" href="https://www.instagram.com/wcrl_binghamton/" target="_blank"
+              rel="noopener noreferrer" aria-label="Follow WCRL on Instagram">
+              <img src="../images/instagram_logo-transparent.png" alt="Instagram">
             </a>
-            <div class="site-title">Watson Combat Robotics League</div>
-            <div class="header-actions">
-                <nav class="nav-links">
-                    <a href="../index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <!-- <a href="projects.html">Robots</a> -->
-                    <a href="events.html">Events</a>
-                    <a href="join.html">Join</a>
-                </nav>
-                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open site menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav id="site-menu" class="site-menu" hidden aria-label="Additional pages">
-                    <a href="folders.html">Folders</a>
-                    <a href="pages.html">Pages</a>
-                    <a href="documentation.html">Documentation</a>
-                </nav>
-            </div>
+            <a class="join-discord" href="https://discord.gg/C88rV9UCzJ" target="_blank" rel="noopener noreferrer"
+              aria-label="Join WCRL on Discord" style="color=blue">
+              <img src="../images/discord_logo-transparent.png" alt="Discord">
+            </a>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <section class="section">
-            <div class="container">
-                <div class="join-heading-row">
-                    <h1 class="section-title">Join the League</h1>
-                    <div class="join-social-links">
-                        <a class="join-instagram" href="https://www.instagram.com/wcrl_binghamton/" target="_blank" rel="noopener noreferrer" aria-label="Follow WCRL on Instagram">
-                            <img src="../images/instagram_logo-transparent.png" alt="Instagram">
-                            <span>@wcrl_binghamton</span>
-                        </a>
-                        <a class="join-discord" href="https://discord.gg/C88rV9UCzJ" target="_blank" rel="noopener noreferrer" aria-label="Join WCRL on Discord">
-                            <img src="../images/discord_logo-transparent.png" alt="Discord">
-                        </a>
-                    </div>
-                </div>
-                <h3>Getting Started with WCRL</h3>
-                <p>Welcome to WCRL! This guide walks you through joining our Discord server, registering as a competitor, and getting on a team — even if you've never used Discord before.</p>
-
-                <p>It should take about 5 minutes.</p>
-
-                <p>If you ever get stuck on anything, let us know and we can help you get sorted out.</p>
-
-                <h3>1. Join the WCRL Server</h3>
-
-                <p>Click this invite link to join the club's Discord server: **https://discord.gg/C88rV9UCzJ**</p>
-
-                <h3>2. Find the Right Channel</h3>
-
-                <p>Look at the list of channels on the left side of the screen. Locate the `#discord-bot` channel - this is where you will type commands to register and create/join a team.</p>
-
-                <h3>3. Register with `/register`</h3>
-
-                <p>This is the most important step — it's how the bot knows who you are and lets you join a team.</p>
-
-                <ol>
-                    <li>In the message box, type `/register` and select it from the menu.</li>
-                    <li>A small form will pop up on your screen with two fields:</li>
-                </ol>
-                        - **Full Name** — your real first and last name
-                        - **School Email** — your school email address
-                </ol>
-                <p>3. Fill in both fields and click **Submit**.</p>
-
-                <p>If everything looks good, you'll see a private confirmation message (only you can see it) saying you're registered. Two things happen automatically:</p>
-                <ul>
-                    <li>You're given the **Competitor** role, which unlocks the team commands below.</li>
-                    <li>Your Discord nickname in this server changes to the full name you entered, so people can find and recognize you.</li>
-                </ul>
-
-                <h3>Already registered and need to fix a typo?</h3>
-                <p>Just run `/register` again with the corrected info — it overwrites your old name/email, nothing gets duplicated.</p>
-
-                <h3>Getting an error?</h3>
-                <ul>
-                    <li><strong>"Doesn't look like a valid email"</strong> — double check for typos; it needs a normal `name@domain` shape.</li>
-                    <li><strong>"Already registered to a different Discord account"</strong> — that email is tied to someone else's Discord account already. If that should be your account, message an Executive.</li>
-                </ul>
-
-                <p>Check that it worked any time with `/status` — it'll tell you whether you're registered and under what name.</p>
-
-                <h3>5. Get on a Team</h3>
-
-                <p>Once you've registered, you can create a new team or join an existing one.</p>
-
-                <h3>Option A: Create a new team</h3>
-
-                <p>If your team doesn't exist yet:</p>
-
-                <ol>
-                    <li>Type `/team create` and select it.</li>
-                    <li>Discord will ask for a `name` — type your team's name (3 to 32 characters).</li>
-                </ol>
-                <p>3. Press Enter.</p>
-
-                <p>This automatically creates:</p>
-                <ul>
-                    <li>A private text channel just for your team.</li>
-                    <li>A team role, so only your teammates (and Executives) can see that channel.</li>
-                </ul>
-
-                <p>You're added to the team automatically as its creator.</p>
-
-                <h3>Option B: Join an existing team</h3>
-
-                <p>If a teammate already created your team:</p>
-
-                <ol>
-                    <li>First, find the exact team name with `/team list` — this shows every team and how many members it has.</li>
-                    <li>Type `/team join`, select it, and type the team's name exactly as it's listed.</li>
-                    <li>Press Enter.</li>
-                </ol>
-
-                <p>You'll now be able to see and post in that team's private channel.</p>
-
-                <h3>Other useful team commands</h3>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Command</th>
-                            <th>What it does</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>`/team roster`</td>
-                            <td>Shows who's on your team (or add a team name to see any team's roster).</td>
-                        </tr>
-                        <tr>
-                            <td>`/team leave`</td>
-                            <td>Removes you from your current team. You can join or create a different one afterward.</td>
-                        </tr>
-                        <tr>
-                            <td>| `/team list` | Lists every team and its member count — handy for finding the exact name to `/team join`. |</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p><strong>Note:</strong> You can only be on <strong>one</strong> team at a time. If you want to switch, `/team leave` first.</p>
 
 
-                <h3>Quick Reference</h3>
+        <!-- Guide content start -->
+        <article class="wcrl-getting-started"
+          style="max-width:720px;margin:0 auto;padding:2rem 1.25rem;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.7;color:#c7ccd1">
+          <h1
+            style="font-size:2rem;line-height:1.25;margin:0 0 1rem;padding-bottom:.5rem;border-bottom:2px solid rgba(255,255,255,.14);color:#f2f3f5">
+            Getting Started with WCRL</h1>
 
-                <p>| I want to... | Command |</p>
-                <p>|---|---|</p>
-                <p>| Register as a competitor | `/register` |</p>
-                <p></p>| Check if I'm registered | `/status` |</p>
-                <p>| Create a new team | `/team create` |</p>
-                <p>| Join an existing team | `/team join` |</p>
-                <p>| See all teams | `/team list` |</p>
-                <p>| See a team's members | `/team roster` |</p>
-                <p>| Leave my team | `/team leave` |</p>
+          <p style="margin:0 0 1rem">Welcome to WCRL! This guide walks you through joining our Discord server,
+            registering as a competitor, and getting on a team &mdash; even if you&rsquo;ve never used Discord before.
+          </p>
 
-                <h3>Still Stuck?</h3>
+          <p style="margin:0 0 1rem">It should take about 5 minutes.</p>
 
-                <p>Reach out in the server's general channel or message an Executive directly — someone will help you get sorted out.</p>
-                <!-- <p class="section-lead">If you are excited to join WCRL, connect with us on Discord, update your nickname to your first and last name, and complete the registration form. You can also reach us at WCRL@binghamton.edu.</p>
-                <div class="form-card">
-                    <form id="join-form" action="https://script.google.com/macros/s/AKfycbwtcEfAY8mOeewy6KGv42U48fkT8uv_-HLKPNo4aEqp8fctmw5_QgDay9Xp7IcaDW08/exec" method="POST" target="join-form-target">
-                        <label for="name">Full name *</label>
-                        <input id="name" name="name" type="text" required>
+          <p style="margin:0 0 1rem">If you ever get stuck on anything, let us know and we can help you get sorted out.
+          </p>
 
-                        <label for="team-name">Team Name *</label>
-                        <input id="team-name" name="team_name" type="text" required>
+          <hr style="border:0;border-top:1px solid rgba(255,255,255,.12);margin:2.5rem 0">
 
-                        <label for="team-member-discord-id">Team Member Discord ID *</label>
-                        <input id="team-member-discord-id" name="team_member_discord_id" type="text" required>
+          <h2
+            style="font-size:1.4rem;margin:2.75rem 0 .9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+            1. Join the WCRL Server</h2>
 
-                        <button class="button" type="submit">Submit</button>
-                        <p id="form-status" class="form-status" aria-live="polite"></p>
-                    </form>
-                    <iframe name="join-form-target" class="form-target" title="Form submission target"></iframe>
-                </div> -->
-            </div>
-        </section>
-    </main>
+          <p style="margin:0 0 1rem">Click this invite link to join the club&rsquo;s Discord server: <strong><a
+                href="https://discord.gg/C88rV9UCzJ"
+                style="color:#8ea1ff;font-weight:600">https://discord.gg/C88rV9UCzJ</a></strong></p>
 
-    <footer class="site-footer">
-        <div class="container">
-        </div>
-    </footer>
+          <h2
+            style="font-size:1.4rem;margin:2.75rem 0 .9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+            2. Find the Right Channel</h2>
 
-    <script src="../js/script.js"></script>
+          <p style="margin:0 0 1rem">Look at the list of channels on the left side of the screen. Locate the <code
+              style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">#bot-commands</code>
+            channel &mdash; this is where you will type commands to register and create/join a team.</p>
+
+          <h2
+            style="font-size:1.4rem;margin:2.75rem 0 .9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+            3. Register with <code
+              style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.85em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/register</code>
+          </h2>
+
+          <p style="margin:0 0 1rem">This is the most important step &mdash; it&rsquo;s how the bot knows who you are
+            and lets you join a team.</p>
+
+          <ol style="margin:.75rem 0 1rem;padding-left:1.5rem">
+            <li style="margin:.4rem 0">In the message box, type <code
+                style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/register</code>
+              and select it from the menu.</li>
+            <li style="margin:.4rem 0">A small form will pop up on your screen with two fields:
+              <ul style="margin:.4rem 0;padding-left:1.5rem">
+                <li style="margin:.4rem 0"><strong style="color:#e3e5e8">Full Name</strong> &mdash; your real first and
+                  last name</li>
+                <li style="margin:.4rem 0"><strong style="color:#e3e5e8">School Email</strong> &mdash; your school email
+                  address</li>
+              </ul>
+            </li>
+            <li style="margin:.4rem 0">Fill in both fields and click <strong style="color:#e3e5e8">Submit</strong>.</li>
+          </ol>
+
+          <p style="margin:0 0 1rem">If everything looks good, you&rsquo;ll see a private confirmation message (only you
+            can see it) saying you&rsquo;re registered. Two things happen automatically:</p>
+
+          <ul style="margin:.75rem 0 1rem;padding-left:1.5rem">
+            <li style="margin:.4rem 0">You&rsquo;re given the <strong style="color:#e3e5e8">Competitor</strong> role,
+              which unlocks the team commands below.</li>
+            <li style="margin:.4rem 0">Your Discord nickname in this server changes to the full name you entered, so
+              people can find and recognize you.</li>
+          </ul>
+
+          <p style="margin:0 0 1rem"><strong style="color:#e3e5e8">Already registered and need to fix a typo?</strong>
+            Just run <code
+              style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/register</code>
+            again with the corrected info &mdash; it overwrites your old name/email, nothing gets duplicated.</p>
+
+          <div
+            style="margin:1.25rem 0;padding:.85rem 1rem;background:rgba(224,170,80,.1);border-left:3px solid #d9a441;border-radius:0 6px 6px 0">
+            <p style="margin:0 0 .5rem"><strong style="color:#e8c98a">Getting an error?</strong></p>
+            <ul style="margin:0;padding-left:1.5rem">
+              <li style="margin:.4rem 0"><em>&ldquo;Doesn&rsquo;t look like a valid email&rdquo;</em> &mdash; double
+                check for typos; it needs a normal <code
+                  style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">name@domain</code>
+                shape.</li>
+              <li style="margin:.4rem 0"><em>&ldquo;Already registered to a different Discord account&rdquo;</em>
+                &mdash; that email is tied to someone else&rsquo;s Discord account already. If that should be your
+                account, message an Executive.</li>
+            </ul>
+          </div>
+
+          <p style="margin:0 0 1rem">Check that it worked any time with <code
+              style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/status</code>
+            &mdash; it&rsquo;ll tell you whether you&rsquo;re registered and under what name.</p>
+
+          <h2
+            style="font-size:1.4rem;margin:2.75rem 0 .9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+            4. Get on a Team</h2>
+
+          <p style="margin:0 0 1rem">Once you&rsquo;ve registered, you can create a new team or join an existing one.
+          </p>
+
+          <h3 style="font-size:1.15rem;margin:1.75rem 0 .6rem;color:#e3e5e8">Option A: Create a new team</h3>
+
+          <p style="margin:0 0 1rem">If your team doesn&rsquo;t exist yet:</p>
+
+          <ol style="margin:.75rem 0 1rem;padding-left:1.5rem">
+            <li style="margin:.4rem 0">Type <code
+                style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team create</code>
+              and select it.</li>
+            <li style="margin:.4rem 0">Discord will ask for a <code
+                style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">name</code>
+              &mdash; type your team&rsquo;s name (3 to 32 characters).</li>
+            <li style="margin:.4rem 0">Press Enter.</li>
+          </ol>
+
+          <p style="margin:0 0 1rem">This automatically creates:</p>
+
+          <ul style="margin:.75rem 0 1rem;padding-left:1.5rem">
+            <li style="margin:.4rem 0">A private text channel just for your team.</li>
+            <li style="margin:.4rem 0">A team role, so only your teammates (and Executives) can see that channel.</li>
+          </ul>
+
+          <p style="margin:0 0 1rem">You&rsquo;re added to the team automatically as its creator.</p>
+
+          <h3 style="font-size:1.15rem;margin:1.75rem 0 .6rem;color:#e3e5e8">Option B: Join an existing team</h3>
+
+          <p style="margin:0 0 1rem">If a teammate already created your team:</p>
+
+          <ol style="margin:.75rem 0 1rem;padding-left:1.5rem">
+            <li style="margin:.4rem 0">First, find the exact team name with <code
+                style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team list</code>
+              &mdash; this shows every team and how many members it has.</li>
+            <li style="margin:.4rem 0">Type <code
+                style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team join</code>,
+              select it, and start typing the team&rsquo;s name &mdash; Discord will suggest matching teams for you to
+              pick.</li>
+            <li style="margin:.4rem 0">Press Enter.</li>
+          </ol>
+
+          <p style="margin:0 0 1rem">You&rsquo;ll now be able to see and post in that team&rsquo;s private channel.</p>
+
+          <h3 style="font-size:1.15rem;margin:1.75rem 0 .6rem;color:#e3e5e8">Other useful team commands</h3>
+
+          <div style="overflow-x:auto">
+            <table style="border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem">
+              <thead>
+                <tr>
+                  <th
+                    style="text-align:left;padding:.6rem .8rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+                    Command</th>
+                  <th
+                    style="text-align:left;padding:.6rem .8rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+                    What it does</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team roster</code>
+                  </td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Shows
+                    who&rsquo;s on your team (or add a team name to see any team&rsquo;s roster).</td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team leave</code>
+                  </td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Removes you
+                    from your current team. You can join or create a different one afterward.</td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team list</code>
+                  </td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Lists every
+                    team and its member count &mdash; handy for finding the exact name to <code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team join</code>.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p
+            style="margin:1.25rem 0;padding:.85rem 1rem;background:rgba(142,161,255,.1);border-left:3px solid #8ea1ff;border-radius:0 6px 6px 0">
+            <strong style="color:#b9c4ff">Note:</strong> You can only be on <strong style="color:#e3e5e8">one</strong>
+            team at a time. If you want to switch, <code
+              style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team leave</code>
+            first.</p>
+
+          <hr style="border:0;border-top:1px solid rgba(255,255,255,.12);margin:2.5rem 0">
+
+          <h2
+            style="font-size:1.4rem;margin:2.75rem 0 .9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+            Quick Reference</h2>
+
+          <div style="overflow-x:auto">
+            <table style="
+    border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem">
+              <thead>
+                <tr>
+                  <th
+                    style="text-align:left;padding:.6rem .8rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+                    I want to&hellip;</th>
+                  <th
+                    style="text-align:left;padding:.6rem .8rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+                    Command</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Register as
+                    a competitor</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/register</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Check if
+                    I&rsquo;m registered</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/status</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Create a new
+                    team</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team create</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Join an
+                    existing team</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team join</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">See all
+                    teams</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team list</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">See a
+                    team&rsquo;s members</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team roster</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top">Leave my
+                    team</td>
+                  <td style="padding:.6rem .8rem;border:1px solid rgba(255,255,255,.12);vertical-align:top"><code
+                      style="background:rgba(255,255,255,.09);padding:.12em .4em;border-radius:4px;font-size:.9em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6e8ea">/team leave</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2
+            style="font-size:1.4rem;margin:2.75rem 0 .9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);color:#f2f3f5">
+            Still Stuck?</h2>
+
+          <p style="margin:0 0 1rem">Reach out in the server&rsquo;s general channel or message an Executive directly
+            &mdash; someone will help you get sorted out.</p>
+        </article>
+
+        <!-- Guide content end -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+    </div>
+
+  </footer>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
