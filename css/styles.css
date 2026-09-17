@@ -337,6 +337,14 @@ img {
     padding: 60px 0;
 }
 
+.section-tight {
+    padding: 24px 0;
+}
+
+.documentation-page .section-title {
+    margin-top: 0;
+}
+
 .section-title {
     font-size: 2rem;
     margin-bottom: 8px;

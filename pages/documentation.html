@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="../WCRL1.png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class = "documentation-page">
     <div class="splash" aria-hidden="true"><div class="splash-logo"><img src="../WCRL.png" alt=""></div></div>
     <header class="site-header">
         <div class="container header-inner">
@@ -25,6 +25,201 @@
     <main id="site-menu" class="site-menu" hidden aria-label="Additional pages"><a href="folders.html">Arduino</a><a href="pages.html">Pico</a><a href="documentation.html">Fusion</a></main>
     <!-- <main><section class="section"><div class="container hero-card page-placeholder"><h1 class="section-title">Documentation</h1></div></section></main> -->
     <!-- <footer class="site-footer"><div class="container"><p>Watson Combat Robotics League.</p></div></footer> -->
+    <main>
+
+  <!-- Page Intro -->
+  <section class="section">
+    <div class="container">
+      <h1 class="hero-title">Getting Started</h1>
+      <p class="section-lead">
+        This document is a brief guide to get you familiar with the process of building
+        your own plantweight combat robot!
+      </p>
+      <p class="section-lead">
+        It is meant for beginners who have not designed a combat robot before, so the
+        more advanced topics/designs are purposely left out.
+      </p>
+      <p class="section-lead">
+        This guide also assumes you are not buying any additional parts; you are just
+        using the ones that we provide for free.
+      </p>
+    </div>
+  </section>
+
+  <!-- Brainstorming -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">Brainstorming</h2>
+      <p class="section-lead">
+        When thinking about a combat robot design, it's important to start with the basics.
+        There are 3 simple components of a combat robot that make it successful: good
+        movement, good attack, and durability.
+      </p>
+
+      <div class="card-grid">
+
+        <!-- Movement -->
+        <div class="card">
+          <span class="tag">Movement</span>
+          <h3 class="team-section-title">Movement</h3>
+          <p>
+            Wheels are the simplest and most popular way to make a combat robot move.
+            They are simple, reliable, and durable. When designing the wheels for your
+            robot, keep a few points in mind:
+          </p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Ground clearance <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Make sure that the wheels can make solid contact with the ground even
+                  if the robot is lifted a little. Remember that there will be a lot of
+                  debris in the arena as stuff gets destroyed, so your robot may run over
+                  some of it and get lifted up.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Wheel grip <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Keep in mind that the arena floor is wooden, which won't have much
+                  grip. Most bots use foam tape around the wheels for more grip, but feel
+                  free to design your own solution.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Upside down driving <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Consider if you want your bot to be able to drive even if it gets
+                  flipped over by another bot.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Stability <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  If you have a large spinner, the vibration and gyroscopic forces may
+                  move your bot around. Consider how this will impact its movement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attack -->
+        <div class="card">
+          <span class="tag">Attack</span>
+          <h3 class="team-section-title">Attack</h3>
+          <p>
+            You will be able to choose between a high-power weapon motor or a
+            high-torque servo to power your weapon. Weapon motors are typically used to
+            make a spinner-type weapon, and a servo is typically used to make a flipper
+            (forklift) type weapon.
+          </p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Spinner balance <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  If a spinner is improperly balanced, it can create a lot of vibration
+                  as it spins, which may have undesired effects.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Spinner size <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Smaller spinners may break easily since they are 3D-printed plastic,
+                  but will reach full speed quicker. Larger spinners are much more
+                  durable but will take longer to spin up.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Fork height <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Details coming soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Durability -->
+        <div class="card">
+          <span class="tag">Durability</span>
+          <h3 class="team-section-title">Durability</h3>
+          <p>
+            At minimum, your combat robot should be able to handle getting pushed around
+            the arena. Keep these points in mind:
+          </p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Secure everything down <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  There will be a lot of movement during a match, so make sure that
+                  everything is securely held down or fastened so that it won't come
+                  loose.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Material <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Details coming soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Other Considerations</h2>
+      <p class="section-lead">
+        Make sure to read the <a href="https://github.com/wcrl/Build-the-Bot/blob/main/WCRL%202024-2025%20Competitor%20Information/WCRL%202024-2025%20Rulebook.md" class="button secondary">rules</a> and take
+        them into account!
+      </p>
+    </div>
+  </section>
+
+</main>
+
+
+<script>
+  document.querySelectorAll(".accordion-header").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.parentElement.classList.toggle("open");
+    });
+  });
+</script>
+
     <script src="../js/script.js"></script>
 </body>
 </html>
