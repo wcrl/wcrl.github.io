@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Design | WCRL</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="documentation-page">
+  <header class="site-header"><div class="container header-inner"><a class="logo" href="../index.html" aria-label="Watson Combat Robotics League home"><span class="logo-mark"><img src="../WCRL1.png" alt="Watson Combat Robotics League logo"></span></a><div class="site-title">Watson Combat Robotics League</div><div class="header-actions"><nav class="nav-links"><a href="../index.html">Home</a><a href="about.html">About Us</a><a href="events.html">Events</a><a href="join.html">Join</a><a href="documentation.html">Documentation</a></nav></div></div></header>
+  <nav class="docs-page-nav" aria-label="Documentation pages"><ul><li><a href="documentation.html">Getting Started</a></li><li><a href="brainstorming.html">Brainstorming</a></li><li><a href="3dDesign.html" class="current" aria-current="page">3D Design</a></li><li><a href="3dPrinting.html">3D Printing</a></li><li><a href="electronics.html">Electronics</a></li><li><a href="code.html">Code</a></li><li><a href="rules.html">Rules</a></li></ul></nav>
+  <main>
+  <!-- Page Intro -->
+  <section class="section">
+    <div class="container">
+      <h1 class="hero-title">3D Design</h1>
+      <p class="section-lead">
+        Once you have a general idea of your bot's design, you can start
+        turning those ideas into reality with 3D modeling!
+      </p>
+    </div>
+  </section>
+  <!-- CAD Software -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">CAD Software</h2>
+      <p class="section-lead">
+        CAD (Computer-Aided Design) software is what you'll use to digitally
+        build and visualize every part of your robot before printing or
+        manufacturing. While there are several options out there (like
+        SolidWorks, Creo, and Inventor), we highly recommend using Fusion 360.
+        It's super easy to get into, makes sharing files with your team a
+        breeze, and most club members have plenty of experience with it to
+        help you out whenever you get stuck. The final choice is ultimately up
+        to you!
+      </p>
+    </div>
+  </section>
+
+  <!-- Getting Started -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">Getting Started</h2>
+      <p class="section-lead">
+        We encourage you to run through a few basic tutorials to get
+        comfortable with using Fusion before jumping into your bot's design.
+        Learning CAD is usually the hardest hurdle for beginners, but once you
+        get through the basics, bot-making gets way easier and a lot more fun!
+        Never hesitate to reach out and ask for help if you hit a wall!
+      </p>
+      <ul class="section-lead">
+        <li><a href="https://www.autodesk.com/products/fusion-360/personal">Download Fusion 360 (Free Education/Personal License)</a></li>
+        <li><a href="https://help.autodesk.com/view/NINVFUS/ENU/">Official Fusion 360 Documentation & Self-Paced Learning</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=fusion+360+beginner+tutorial">Fusion 360 Beginner Video Tutorials</a></li>
+      </ul>
+      <p class="section-lead">
+        Additionally, you can find existing CAD models for the parts we
+        provide <a href="https://github.com/wcrl/Build-the-Bot/tree/main/Parts">here</a>.
+      </p>
+      <p class="section-lead">
+        Also, <a href="https://github.com/wcrl/Build-the-Bot/raw/refs/heads/main/SampleBots/PerryBot.f3z">here</a>
+        is CAD for a bot that previously competed in our league. <strong>NOTE:</strong>
+        this CAD model should only be used for inspiration; the parts used are
+        outdated. Additionally, we only provide 2 N20 drive motors in the kits
+        (which should be plenty of power).
+      </p>
+    </div>
+  </section>
+
+  <!-- Design Recommendations -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">Design Recommendations</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="accordion">
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Wall thickness <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Aim for an external wall thickness of around 3mm to
+                  withstand impacts. Any more is overkill.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Heat-set inserts <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Avoid screwing directly into plastic or modeling threads
+                  into prints, as they wear out fast. Use heat-set inserts
+                  wherever screws are needed (a 4.4mm diameter hole works great
+                  for standard M3 inserts).
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Screw head clearance <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Make sure to leave enough clearance around screw heads for
+                  tools to reach during assembly.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Modular modeling & assemblies <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Model components separately and bring them together in an
+                  assembly file. This keeps your bot modular, lets you print
+                  and test smaller parts individually, and makes assembling
+                  much easier.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Leverage constraints & timeline <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Fusion has built-in constraints which will allow you to
+                  specify specific relationships within parts in the robot.
+                  Using them will make resizing and fine-tuning your robot
+                  significantly easier. There is also a timeline on the bottom
+                  you can use to alter previous features and/or sketches.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Use parameters <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Set up parameters for dimensions like hole sizes and
+                  clearances so you can tweak them globally later on without
+                  breaking your model.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Steps -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Next Steps</h2>
+      <p class="section-lead">
+        Once you have a solid general CAD model together (it doesn't need to
+        be 100% finished!), submit it to the club executives for review. As
+        long as your design is headed in a good direction with no major flaws,
+        you'll get approved for electronics so your teammates can start
+        soldering and wiring!
+      </p>
+    </div>
+  </section>
+  </main>
+  <script src="../js/script.js"></script>
+</body>
+</html>

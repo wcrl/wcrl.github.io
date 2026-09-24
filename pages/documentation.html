@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class = "documentation-page">
-    <div class="splash" aria-hidden="true"><div class="splash-logo"><img src="../WCRL.png" alt=""></div></div>
     <header class="site-header">
         <div class="container header-inner">
             <a class="logo" href="../index.html" aria-label="Watson Combat Robotics League home"><span class="logo-mark"><img src="../WCRL1.png" alt="Watson Combat Robotics League logo"></span></a>
@@ -18,197 +17,103 @@
                 <nav class="nav-links">
                     <a href="../index.html">Home</a><a href="about.html">About Us</a><!-- <a href="projects.html">Robots</a> --><a href="events.html">Events</a><a href="join.html">Join</a><a href="documentation.html">Documentation</a>
                 </nav>
-                <!-- <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open site menu"><span></span><span></span><span></span></button> -->
+                
                 </div>
         </div>
     </header>
-    <main id="site-menu" class="site-menu" hidden aria-label="Additional pages"><a href="folders.html">Arduino</a><a href="pages.html">Pico</a><a href="documentation.html">Fusion</a></main>
-    <!-- <main><section class="section"><div class="container hero-card page-placeholder"><h1 class="section-title">Documentation</h1></div></section></main> -->
-    <!-- <footer class="site-footer"><div class="container"><p>Watson Combat Robotics League.</p></div></footer> -->
+
+    <nav class="docs-page-nav" aria-label="Documentation pages">
+      <ul>
+        <li><a href="documentation.html" class="current" aria-current="page">Getting Started</a></li>
+        <li><a href="brainstorming.html">Brainstorming</a></li>
+        <li><a href="3dDesign.html">3D Design</a></li>
+        <li><a href="3dPrinting.html">3D Printing</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="rules.html">Rules</a></li>
+      </ul>
+    </nav>
+
     <main>
+
+    <!-- <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open site menu"><span>></span></span><span></span><span></span></button>
+      <main id="site-menu" class="site-menu" hidden aria-label="Additional pages"><a href="folders.html">Arduino</a><a href="pages.html">Pico</a><a href="documentation.html">Fusion</a></main> -->
 
   <!-- Page Intro -->
   <section class="section">
     <div class="container">
       <h1 class="hero-title">Getting Started</h1>
       <p class="section-lead">
-        This document is a brief guide to get you familiar with the process of building
-        your own plantweight combat robot!
+        This guide aims to help anyone, regardless of prior knowledge, build a combat
+        robot from start to finish.
       </p>
       <p class="section-lead">
-        It is meant for beginners who have not designed a combat robot before, so the
-        more advanced topics/designs are purposely left out.
+        Since it is targeted for beginners, some more advanced topics are purposely
+        left out. If you are interested in elevating your robot, there are plenty of
+        other resources such as <a href="https://runamok.tech/AskAaron.html">AskAaron</a>
+        and <a href="https://justcuzrobotics.com/blogs/jcr">JustCuzRobotics</a> (just to
+        name a few).
       </p>
       <p class="section-lead">
-        This guide also assumes you are not buying any additional parts; you are just
-        using the ones that we provide for free.
+        Additionally, we assume that you will be using the parts that we provide.
+        However, you are not restricted to these parts; feel free to purchase and
+        utilize your own parts. The most important thing is that your completed bot
+        follows our <a href="rules.html" title="View the WCRL rules">rules</a>.
       </p>
     </div>
   </section>
 
-  <!-- Brainstorming -->
+  <!-- Timeline -->
   <section class="section section-tight">
     <div class="container">
-      <h2 class="section-title">Brainstorming</h2>
+      <h2 class="section-title">Timeline</h2>
       <p class="section-lead">
-        When thinking about a combat robot design, it's important to start with the basics.
-        There are 3 simple components of a combat robot that make it successful: good
-        movement, good attack, and durability.
+        Below are the general steps of the bot-building process:
       </p>
-
-      <div class="card-grid">
-
-        <!-- Movement -->
-        <div class="card">
-          <span class="tag">Movement</span>
-          <h3 class="team-section-title">Movement</h3>
-          <p>
-            Wheels are the simplest and most popular way to make a combat robot move.
-            They are simple, reliable, and durable. When designing the wheels for your
-            robot, keep a few points in mind:
-          </p>
-          <div class="accordion">
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Ground clearance <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Make sure that the wheels can make solid contact with the ground even
-                  if the robot is lifted a little. Remember that there will be a lot of
-                  debris in the arena as stuff gets destroyed, so your robot may run over
-                  some of it and get lifted up.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Wheel grip <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Keep in mind that the arena floor is wooden, which won't have much
-                  grip. Most bots use foam tape around the wheels for more grip, but feel
-                  free to design your own solution.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Upside down driving <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Consider if you want your bot to be able to drive even if it gets
-                  flipped over by another bot.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Stability <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  If you have a large spinner, the vibration and gyroscopic forces may
-                  move your bot around. Consider how this will impact its movement.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Attack -->
-        <div class="card">
-          <span class="tag">Attack</span>
-          <h3 class="team-section-title">Attack</h3>
-          <p>
-            You will be able to choose between a high-power weapon motor or a
-            high-torque servo to power your weapon. Weapon motors are typically used to
-            make a spinner-type weapon, and a servo is typically used to make a flipper
-            (forklift) type weapon.
-          </p>
-          <div class="accordion">
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Spinner balance <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  If a spinner is improperly balanced, it can create a lot of vibration
-                  as it spins, which may have undesired effects.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Spinner size <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Smaller spinners may break easily since they are 3D-printed plastic,
-                  but will reach full speed quicker. Larger spinners are much more
-                  durable but will take longer to spin up.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Fork height <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>Details coming soon.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Durability -->
-        <div class="card">
-          <span class="tag">Durability</span>
-          <h3 class="team-section-title">Durability</h3>
-          <p>
-            At minimum, your combat robot should be able to handle getting pushed around
-            the arena. Keep these points in mind:
-          </p>
-          <div class="accordion">
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Secure everything down <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  There will be a lot of movement during a match, so make sure that
-                  everything is securely held down or fastened so that it won't come
-                  loose.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button class="accordion-header">
-                Material <span>+</span>
-              </button>
-              <div class="accordion-content">
-                <p>Details coming soon.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <ol class="section-lead">
+        <li>Brainstorm</li>
+        <li>3D Design + Printing</li>
+        <li>Assemble Electronics</li>
+        <li>Upload Code</li>
+        <li>Fight</li>
+      </ol>
+      <p class="section-lead">
+        On the side, you can navigate directly to specific sections of the
+        documentation. This guide is designed so that you can go through the pages
+        in order.
+      </p>
+      <p class="section-lead">
+        <strong>NOTE:</strong> This website is still very much a work in progress.
+        Some pages may still be under construction or out of date. If you ever have
+        questions, feel free to reach out to us on Discord!
+      </p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Helpful Links -->
+  <section class="section helpful-links">
     <div class="container">
-      <h2 class="section-title">Other Considerations</h2>
+      <h2 class="section-title">Helpful Links</h2>
       <p class="section-lead">
-        Make sure to read the <a href="https://github.com/wcrl/Build-the-Bot/blob/main/WCRL%202024-2025%20Competitor%20Information/WCRL%202024-2025%20Rulebook.md" class="button secondary">rules</a> and take
-        them into account!
+        Below is quick access to any useful links you might need:
       </p>
+      <ul class="section-lead">
+        <li><a href="rules.html" title="View the WCRL rules">Rules</a></li>
+        <li>
+          <a href="https://github.com/wcrl/Build-the-Bot/raw/refs/heads/main/SampleBots/PerryBot.f3z">SampleBot CAD</a>
+          <ul>
+            <li>
+              Please note that this CAD model should only be used for inspiration;
+              the parts used are outdated. Additionally, we only provide 2 N20
+              drive motors in the kits (which should be plenty of power).
+            </li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/wcrl/Build-the-Bot/tree/main/Parts">Provided Parts CAD</a></li>
+        <li><a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSNWbIkeQH0NxQ_KGRiqFoHKELZ4s0TO38RuMXRRxh4_Vu6C9dmzgX4YWMKjfzwMRgNfJxg5LBQq7SH/pubhtml">WCRL Parts</a></li>
+      </ul>
     </div>
   </section>
-
 </main>
 
 
@@ -219,7 +124,10 @@
     });
   });
 </script>
-
+<script src="../js/script.js"></script>
+</body>
+</html>
+<!-- 
 <div style="display: flex; justify-content: center; width: 100%; margin-bottom: 40px;">
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYxgJSxJsIagNMQ1spZXHMjXTvGWbentWE4N--lczs4A-yvuOOEXMEjDc2cJcSkJNqWIgjWExtyfO0/pubembed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
@@ -241,4 +149,4 @@
 </div>
     <script src="../js/script.js"></script>
 </body>
-</html>
+</html> -->

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstorming | WCRL</title>
+    <link rel="icon" type="image/png" href="../WCRL1.png">
+    <link rel="apple-touch-icon" href="../WCRL1.png">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="documentation-page">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="../index.html" aria-label="Watson Combat Robotics League home"><span class="logo-mark"><img src="../WCRL1.png" alt="Watson Combat Robotics League logo"></span></a>
+            <div class="site-title">Watson Combat Robotics League</div>
+            <div class="header-actions">
+                <nav class="nav-links">
+                    <a href="../index.html">Home</a><a href="about.html">About Us</a><a href="events.html">Events</a><a href="join.html">Join</a><a href="documentation.html">Documentation</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="docs-page-nav" aria-label="Documentation pages">
+      <ul>
+        <li><a href="documentation.html">Getting Started</a></li>
+        <li><a href="brainstorming.html" class="current" aria-current="page">Brainstorming</a></li>
+        <li><a href="3dDesign.html">3D Design</a></li>
+        <li><a href="3dPrinting.html">3D Printing</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="rules.html">Rules</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open site menu"><span>></span></span><span></span><span></span></button>
+      <main id="site-menu" class="site-menu" hidden aria-label="Additional pages"><a href="folders.html">Arduino</a><a href="pages.html">Pico</a><a href="documentation.html">Fusion</a></main>
+
+        <!-- Page Intro -->
+        <section class="section">
+          <div class="container">
+            <h1 class="hero-title">Brainstorming</h1>
+            <p class="section-lead">
+              Before designing your robot, it's important to get familiar with our
+              league's <a href="rules.html">rules</a>. And our
+              <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSNWbIkeQH0NxQ_KGRiqFoHKELZ4s0TO38RuMXRRxh4_Vu6C9dmzgX4YWMKjfzwMRgNfJxg5LBQq7SH/pubhtml">provided parts</a>
+              to understand what constraints you have to design your bot around. Of
+              course, feel free to purchase and use your own parts if you wish; just
+              make sure that your bot follows all rules as specified in the rulebook!
+            </p>
+            <p class="section-lead">
+              There are 3 simple principles behind what makes a combat robot
+              successful: movement, attack, and durability.
+            </p>
+          </div>
+        </section>
+
+        <!-- Brainstorming Cards -->
+        <section class="section section-tight">
+          <div class="container">
+
+            <div class="card-grid">
+
+              <!-- Movement -->
+              <div class="card">
+                <span class="tag">Movement</span>
+                <h3 class="team-section-title">Movement</h3>
+                <p>
+                  Wheels are the simplest and most popular way to make a combat robot
+                  move. They are simple, reliable, and durable. When designing the
+                  wheels for your robot, keep a few points in mind:
+                </p>
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Ground clearance <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Make sure that the wheels can make solid contact with the
+                        ground even if the robot is lifted a little. Remember that
+                        there will be a lot of debris in the arena as stuff gets
+                        destroyed, so your robot may run over some of it and get
+                        lifted up.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Wheel grip <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Keep in mind that the arena floor is wooden, which won't have
+                        much grip. Most bots use foam tape around the wheels for more
+                        grip, but feel free to design your own solution.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Upside-down driving <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Consider if you want your bot to be able to drive even if it
+                        gets flipped over by another bot.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Stability <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        If you have a large spinner, the vibration and gyroscopic
+                        forces may move your bot around. Consider how this will
+                        impact its movement.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Attack -->
+              <div class="card">
+                <span class="tag">Attack</span>
+                <h3 class="team-section-title">Attack</h3>
+                <p>
+                  You will be able to choose between a high-power weapon motor or a
+                  high-torque servo to power your weapon. Weapon motors are typically
+                  used to make a spinner-type weapon, and a servo is typically used
+                  to make a flipper (forklift) type weapon.
+                </p>
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Spinner balance <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        If a spinner is improperly balanced, it can create a lot of
+                        vibration as it spins, which may have undesired effects.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Spinner size <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Smaller spinners may break easily since they are 3D-printed
+                        plastic, but will reach full speed quicker.
+                      </p>
+                      <p>
+                        Larger spinners are much more durable but will take longer to
+                        spin up.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Fork height <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Better to have lower clearance with the ground so that forks
+                        are able to disrupt opponents' drive.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Durability -->
+              <div class="card">
+                <span class="tag">Durability</span>
+                <h3 class="team-section-title">Durability</h3>
+                <p>
+                  At minimum, your combat robot should be able to handle getting
+                  pushed around the arena. Keep these points in mind:
+                </p>
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Secure, secure, secure <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        There will be a lot of movement during a match, so make sure
+                        that everything is securely held down or fastened so that it
+                        won't come loose.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button class="accordion-header">
+                      Material <span>+</span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Different filaments each have their own properties, which can
+                        impact the impact resistance of your robot.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+</main>
+
+
+<script>
+  document.querySelectorAll(".accordion-header").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.parentElement.classList.toggle("open");
+    });
+  });
+</script>
+<script src="../js/script.js"></script>
+</body>
+</html>

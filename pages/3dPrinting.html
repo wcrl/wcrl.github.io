@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Printing | WCRL</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="documentation-page">
+  <header class="site-header"><div class="container header-inner"><a class="logo" href="../index.html" aria-label="Watson Combat Robotics League home"><span class="logo-mark"><img src="../WCRL1.png" alt="Watson Combat Robotics League logo"></span></a><div class="site-title">Watson Combat Robotics League</div><div class="header-actions"><nav class="nav-links"><a href="../index.html">Home</a><a href="about.html">About Us</a><a href="events.html">Events</a><a href="join.html">Join</a><a href="documentation.html">Documentation</a></nav></div></div></header>
+  <nav class="docs-page-nav" aria-label="Documentation pages"><ul><li><a href="documentation.html">Getting Started</a></li><li><a href="brainstorming.html">Brainstorming</a></li><li><a href="3dDesign.html">3D Design</a></li><li><a href="3dPrinting.html" class="current" aria-current="page">3D Printing</a></li><li><a href="electronics.html">Electronics</a></li><li><a href="code.html">Code</a></li><li><a href="rules.html">Rules</a></li></ul></nav>
+  <main>
+  <!-- Page Intro -->
+  <section class="section">
+    <div class="container">
+      <h1 class="hero-title">3D Printing</h1>
+      <p class="section-lead">
+        Welcome to the 3D printing guide! If you're reading this, you've likely
+        finished your CAD prototype and are ready to turn those digital
+        designs into real, physical parts. WCRL does not print parts for teams
+        or pay for parts printed by teams, but don't worry—there are great
+        on-campus resources where you can get your bot printed easily. In this
+        guide, we'll walk through where to print on campus, how to export and
+        slice your files, and how to choose the right materials for your
+        combat robot.
+      </p>
+    </div>
+  </section>
+  <!-- Where Can You Print -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">Where Can You Print?</h2>
+
+      <div class="card-grid">
+
+        <!-- Watson Fabrication Lab -->
+        <div class="card">
+          <h3 class="team-section-title">Watson Fabrication Lab</h3>
+          <p>
+            The Watson Fabrication Lab is a great option for Binghamton
+            University students.
+          </p>
+          <p>
+            At this time, the Lab only provides free PLA prints for WCRL.
+            However, if you have your own filament, you can request a
+            technician to use that for printing. Submit a print to the
+            <a href="#">Lab here</a>.
+          </p>
+        </div>
+
+        <!-- Emerging Technology Studio -->
+        <div class="card">
+          <h3 class="team-section-title">Emerging Technology Studio (ETS)</h3>
+          <p>
+            The Emerging Technology Studio (ETS) is a makerspace open to all
+            students and stocked with MK3S+ printers. It's a fantastic spot if
+            you have questions or need a hand with printing. You can submit a
+            print to <a href="#">ETS here</a>.
+          </p>
+          <p>
+            Printing at ETS is free! Just indicate in form that the prints are
+            for WCRL, and the fee will be waived. ETS offers the following
+            filaments to students: PLA, PETG, TPU, ASA, ABS. It's also
+            possible to bring your own filament to use on ETS printers
+            (confirm with a technician first).
+          </p>
+          <p>
+            <strong>Logistics & Hours:</strong><br>
+            Monday–Thursday: 10:00 AM – 6:00 PM<br>
+            Friday: 10:00 AM – 5:00 PM<br>
+            Weekends: Closed
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Print -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">How to Print</h2>
+
+      <h3 class="team-section-title">Exporting Your CAD Model</h3>
+      <p class="section-lead">
+        Once your CAD design is complete, export your body as a 3D mesh file
+        like .STL or .3MF (set units to millimeters for accurate sizing). In
+        Fusion 360, simply right-click your body and choose "Save as Mesh".
+        Check out the <a href="#">Autodesk Guide</a> if you need step-by-step
+        help.
+      </p>
+
+      <h3 class="team-section-title">Slicing Your Print</h3>
+      <p class="section-lead">
+        Slicing is the magic step that turns your 3D CAD model into
+        instructions that a 3D printer can actually follow.
+      </p>
+      <p class="section-lead">
+        While both the Fab Lab and ETS technicians can slice your files for
+        you when you submit them, slicing them yourself gives you total
+        control over how your robot is built! Fine-tuning your own slicing
+        settings is one of the best ways to maximize your bot's durability and
+        combat potential.
+      </p>
+
+      <h3 class="team-section-title">The Basic Slicing Workflow</h3>
+      <ol class="section-lead">
+        <li><strong>Import your model:</strong> Load your exported .STL or .3MF file into a slicer like PrusaSlicer or Cura.</li>
+        <li><strong>Pick a printer profile:</strong> Select the printer and nozzle size you'll be using.</li>
+        <li><strong>Adjust print settings:</strong> Tune your layer height, infill, walls, and supports depending on your part's needs.</li>
+        <li><strong>Slice and export:</strong> Hit "Slice" to preview the print layers, then export the generated G-code file to bring to the lab.</li>
+      </ol>
+      <p class="section-lead">
+        Need a quick tutorial? Check out Prusa's beginner guide to
+        <a href="#">First Print with PrusaSlicer</a> or the
+        <a href="#">3D Printing Basics Guide</a> to get up to speed fast!
+      </p>
+
+      <h3 class="team-section-title">Tips for Optimal Slicing</h3>
+      <div class="card-grid">
+        <div class="card">
+          <div class="accordion">
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Layer height <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  A standard 0.2mm layer height offers a great balance of speed
+                  and strength. Use 0.3mm for quick rough prints or test fits,
+                  and 0.15mm if you need smooth surface detail for
+                  tight-fitting internal components.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Infill & wall strength <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  For early prototype fits, use low infill (5–10%) to save
+                  time and filament. For battle-ready parts, use higher infill
+                  (20–40%) combined with 3 to 5 wall perimeters—extra wall
+                  perimeters often add way more structural strength against
+                  impacts than just cranking up infill percentage!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" data-accordion>
+              <button class="accordion-header">
+                Orientation & supports <span>+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Position your parts so large flat surfaces rest directly on
+                  the print bed. Try to orient heavy load-bearing forces
+                  parallel to print layers rather than pulling layers apart,
+                  and minimize overhangs over 45 degrees to avoid relying too
+                  heavily on support material.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Printing Materials -->
+  <section class="section section-tight">
+    <div class="container">
+      <h2 class="section-title">Printing Materials</h2>
+      <p class="section-lead">
+        Choosing the right plastic filament is essential for combat robot
+        performance:
+      </p>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <span class="tag">PLA</span>
+          <h3 class="team-section-title">PLA</h3>
+          <p>
+            Most common and easy to print. Very rigid with great visual
+            detail, but lower impact resistance (can shatter on high
+            impacts).
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">PETG</span>
+          <h3 class="team-section-title">PETG</h3>
+          <p>
+            Flexible enough to absorb hits with significantly better impact
+            resistance than PLA. A solid choice for combat structural parts.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">TPU</span>
+          <h3 class="team-section-title">TPU</h3>
+          <p>
+            Rubbery, flexible material with exceptional impact
+            resistance—perfect for shock-mounting electronics or flexible
+            bumpers.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="tag">ABS</span>
+          <h3 class="team-section-title">ABS</h3>
+          <p>
+            Tough and rigid material commonly used in industrial parts. Higher
+            impact resistance than PLA, but trickier to print due to warping.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </main>
+  <script src="../js/script.js"></script>
+</body>
+</html>
